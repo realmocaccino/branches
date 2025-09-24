@@ -1,0 +1,57 @@
+:root {
+	--brand-name-image-source: url('../img/name-black.png');
+
+	--dark-mode-brand-name-image-source: url('../img/name-white.png');
+}
+
+.brand-logo {
+    float: left;
+}
+
+.brand-logo img {
+	height: 42px;
+}
+
+.brand-name {
+    float: left;
+    margin: 5px 0 0 15px;
+    font-size: 25px;
+	font-weight: bold;
+}
+
+.brand-name .brand-name-image {
+    width: 150px;
+    height: 21px;
+    background-image: var(--brand-name-image-source);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.dark .brand-name .brand-name-image {
+    background-image: var(--dark-mode-brand-name-image-source);
+}
+
+@media (max-width: 991px) {
+	
+	.brand-name {
+	    margin-top: 10px;
+		font-size: 19px;
+	}
+	
+}
+
+@media (max-width: 479px) {
+
+    .brand-logo img {
+	    height: 37px;
+    }
+    
+    .brand-name {
+	    margin-top: 8px;
+	}
+
+    .brand-name .brand-name-image {
+        width: 135px;
+    }
+
+}

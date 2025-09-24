@@ -1,0 +1,163 @@
+:root {
+	--header-search-results-line-even: var(--tertiary-color);
+	--header-search-results-line-odd: var(--primary-color);
+
+	--dark-mode-header-search-results-line-even: var(--dark-mode-secondary-color);
+    --dark-mode-header-search-results-line-odd: var(--dark-mode-primary-color);
+}
+
+#header-search-results {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	font-size: 13px;
+	box-shadow: -3px 3px 0 rgba(0,0,0,0.15);
+}
+
+#header-search-results > li {
+	background-color: var(--header-search-results-line-even);
+}
+
+#header-search-results > li:nth-of-type(odd) {
+	background-color: var(--header-search-results-line-odd);
+}
+
+.dark #header-search-results > li {
+	background-color: var(--dark-mode-header-search-results-line-even);
+}
+
+.dark #header-search-results > li:nth-of-type(odd) {
+	background-color: var(--dark-mode-header-search-results-line-odd);
+}
+
+#header-search-results > li .item-game-horizontal {
+	width: 100%;
+	height: 80px;
+}
+
+#header-search-results > li .item-game-horizontal .item-game-link {
+	box-sizing: content-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px 20px;
+	width: calc(100% - 40px);
+	height: 50px;
+	display: block;
+	font-size: 15px;
+	line-height: normal;
+	text-align: left;
+	overflow: hidden;
+	border-radius: 0;
+}
+
+#header-search-results > li .item-game-horizontal .item-game-link .item-game-image img {
+	width: 40px;
+	height: 50px;
+}
+
+#header-search-results > li .item-game-horizontal .item-game-link .item-game-data {
+	margin: 5px 5px 0 12px;
+	width: calc(100% - 100px);
+}
+
+#header-search-results > li .item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-release {
+	font-size: 11px;
+}
+
+.dark #header-search-results > li .item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-release {
+	color: #DDD;
+}
+
+#header-search-results > li .item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-platforms li .item-platform {
+	width: 13px;
+	height: 13px;
+}
+
+#header-search-results > li .item-game-horizontal .item-game-score {
+	top: 13px;
+	right: 18px;
+}
+
+#header-search-results > li.header-search-results-more-results > a,
+#header-search-results > li.header-search-results-add > a {
+	display: block;
+}
+
+#header-search-results > li.header-search-results-more-results > a:hover,
+#header-search-results > li.header-search-results-add > a:hover {
+	background-color: var(--site-color);
+	color: #FFF !important;
+}
+
+#header-search-results > li.header-search-results-more-results > a,
+#header-search-results > li.header-search-results-add > a,
+#header-search-results > li.header-search-results-not-found,
+#header-search-results > li.header-search-results-error {
+	padding: 8px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#header-search-results > li.header-search-results-add > a {
+	color: inherit;
+}
+
+@media (min-width: 1200px) {
+
+	#header-search-results {
+		border-radius: 12px;
+	}
+
+	#header-search-results > li:first-child {
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+	}
+	
+	#header-search-results > li:last-child {
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+	}
+
+	#header-search-results > li:first-child .item-game-horizontal .item-game-link {
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+	}
+
+	#header-search-results > li.header-search-results-more-results > a {
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+	}
+	
+}
+
+@media (max-width: 1199px) {
+
+	#header-search-results {
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+	
+}
+
+@media (max-height: 767px) {
+
+	#header-search-results {
+		overflow-y: scroll;
+	}
+	
+	#header-search-results > li .item-game-horizontal .item-game-link .item-game-name.name-too-long {
+		font-size: 15px;
+	}
+
+	#header-search-results > li {
+		background-color: #FFF;
+	}
+
+	#header-search-results > li:nth-of-type(odd) {
+		background-color: #F1F1F1;
+	}
+	
+}

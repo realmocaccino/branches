@@ -1,0 +1,178 @@
+.item-game-carousel {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 500px;
+	display: block;
+	line-height: normal;
+	box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.item-game-carousel .item-game-image {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item-game-carousel .item-game-image img {
+	width: 100%;
+	min-height: 100%;
+}
+
+.item-game-carousel .item-game-border {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 500px;
+}
+
+.item-game-carousel:hover .item-game-border {
+    border: 9px solid var(--site-color);
+}
+
+.item-game-carousel .item-game-data {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+.item-game-carousel .item-game-data .item-game-name {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.item-game-carousel .item-game-data .item-game-name.name-too-long {}
+
+.item-game-carousel .item-game-data .item-game-description {
+    clear: both;
+    padding-top: 10px;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.item-game-carousel .item-game-score {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.item-game-carousel .item-game-score .item-game-score-daysToRelease {
+    width: 130px;
+    height: 50px;
+    font-size: 35px;
+}
+
+@media (min-width: 1200px) {
+
+    .item-game-carousel .item-game-image img {
+        margin-top: -15px;
+    }
+
+}
+
+@media (max-width: 991px) {
+	
+	.item-game-carousel,
+	.item-game-carousel .item-game-border {
+	    height: 388px;
+    }
+    
+    .item-game-carousel .item-game-data {
+        left: 30px;
+        right: 30px;
+        bottom: 25px;
+        width: calc(100% - 60px);
+    }
+    
+    .item-game-carousel .item-game-data .item-game-name {
+        font-size: 40px;
+    }
+    
+    .item-game-carousel .item-game-data .item-game-description {
+	    font-size: 18px;
+	    line-height: 24px;
+    }
+
+	.item-game-carousel .item-game-score .item-game-score-daysToRelease {
+        width: 110px;
+        height: 40px;
+        font-size: 28px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+	
+	.item-game-carousel,
+	.item-game-carousel .item-game-border {
+	    height: 286px;
+    }
+    
+    .item-game-carousel .item-game-data {
+        padding: 15px;
+    }
+    
+    .item-game-carousel .item-game-data .item-game-name {
+        font-size: 35px;
+    }
+    
+    .item-game-carousel .item-game-data .item-game-description {
+	    display: none;
+    }
+	
+}
+
+@media (max-width: 575px) {
+	
+	.item-game-carousel {
+	    height: 185px;
+    }
+    
+    .item-game-carousel:hover .item-game-data .item-game-name,
+    .item-game-carousel:focus .item-game-data .item-game-name {
+        color: var(--site-color);
+    }
+    
+    .item-game-carousel .item-game-border {
+        display: none;
+    }
+    
+    .item-game-carousel .item-game-data {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    
+    .item-game-carousel .item-game-data .item-game-name {
+	    font-size: 30px;
+    }
+    
+    .item-game-carousel .item-game-data .item-game-name.name-too-long {
+        font-size: 25px;
+    }
+    
+    .item-game-carousel .item-game-score {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .item-game-carousel .item-game-score .item-game-score-daysToRelease {
+        width: 64px;
+        height: 22px;
+        font-size: 15px;
+    }
+	
+}

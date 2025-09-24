@@ -1,0 +1,57 @@
+.item-game-spotlight {
+    overflow: hidden;
+    max-height: 343px;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.item-game-spotlight-category {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.item-game-spotlight-game-cover {
+    float: left;
+    margin-right: 25px;
+}
+
+.item-game-spotlight-game-cover img {
+    width: 200px;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.item-game-spotlight-info {}
+
+.item-game-spotlight-game-name {
+    font-size: 20px;
+}
+
+.item-game-spotlight-game-owner {
+    color: #DDD;
+}
+
+.item-game-spotlight-game-description {
+    color: #FFF;
+
+}
+
+@media (max-width: 479px) {
+
+    .item-game-spotlight {
+        max-height: none;
+    }
+
+    .item-game-spotlight-game-cover {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .item-game-spotlight-game-description {
+        display: none;
+    }
+
+}

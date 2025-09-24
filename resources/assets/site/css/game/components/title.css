@@ -1,0 +1,33 @@
+.game-title {
+	clear: both;
+	margin: 20px 0 10px;
+}
+
+.game-title h3 {
+	margin: 0;
+	display: inline-block;
+	padding: 6px 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: var(--site-color);
+	color: var(--site-secondary-color);
+}
+
+.game-title h3 a {
+	color: #FFF;
+}
+
+.game-title .title-more {
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+@media (max-width: 767px) {
+	
+	.game-title h3 {
+	    box-shadow: none;
+    }
+	
+}

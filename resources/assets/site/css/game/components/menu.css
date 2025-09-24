@@ -1,0 +1,44 @@
+#game-menu {
+	margin-bottom: 25px;
+}
+
+#game-menu ul {}
+
+#game-menu ul li {
+    float: left;
+	margin-right: 12px;
+}
+
+#game-menu ul li:last-child {
+    margin-right: 0;
+}
+
+#game-menu ul li a {
+    display: block;
+	padding: 6px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	background-color: #DFDFDF;
+	border-radius: 6px;
+	text-transform: uppercase;
+}
+
+#game-menu ul li.active a,
+#game-menu ul li:hover a,
+#game-menu ul li:focus a {
+    background-color: var(--site-color);
+    color: #FFF;
+}
+
+#game-menu ul li .badge {
+	display: inline;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+    #game-menu ul li:nth-last-child(-n+2) {
+        display: none;
+    }
+    
+}

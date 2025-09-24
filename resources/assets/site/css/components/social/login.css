@@ -1,0 +1,20 @@
+.social-group {
+	margin: 5px 0 10px;
+}
+
+.social-group-buttons {
+    margin: 12px 0 5px;
+	text-align: center;
+}
+
+.social-group-buttons a {
+	width: 100%
+}
+
+.social-group-buttons a.btn-outline-google {
+	width: 85%;
+}
+
+.social-group .strike {
+	margin-top: 15px;
+}

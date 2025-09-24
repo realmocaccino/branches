@@ -1,0 +1,144 @@
+:root {
+	--score-color: #333;
+
+	--dark-mode-score-color: var(--dark-mode-secondary-font-color);
+}
+
+.score-low {
+	background-color: rgba(250, 29, 27, 0.9);
+	stroke: rgba(250, 29, 27, 0.9);
+	stroke-width: 7;
+}
+
+.score-low-fill {
+	background-color: rgba(255, 153, 153, 1);
+	stroke: rgba(255, 153, 153, 1);
+	stroke-width: 7;
+}
+
+.score-medium {
+	background-color: rgba(255, 166, 11, 0.9);
+	stroke: rgba(255, 166, 11, 0.9);
+	stroke-width: 7;
+}
+
+.score-medium-fill {
+	background-color: rgba(255, 255, 153, 1);
+	stroke: rgba(255, 255, 153, 1);
+	stroke-width: 7;
+}
+
+.score-high {
+	background-color: rgba(43, 184, 0, 0.9);
+	stroke: rgba(43, 184, 0, 0.9);
+	stroke-width: 7;
+}
+
+.score-high-fill {
+	background-color: rgba(152, 251, 152, 1);
+	stroke: rgba(152, 251, 152, 1);
+	stroke-width: 7;
+}
+
+.circles-text {
+	font-weight: bold;
+	font-size: 15px;
+	color: var(--score-color);
+}
+
+.dark .circles-text {
+	color: var(--dark-mode-score-color);
+}
+
+.default-score-size .circles-text {
+	font-size: 14px;
+}
+
+.small-score-size .circles-text {
+	font-size: 12px;
+}
+
+.game-score-size .circles-text {
+	font-size: 22px;
+}
+
+.game-user-score-size .circles-text {
+	font-size: 23px;
+}
+
+.game-spotlight-score-size .circles-text {
+	font-size: 40px;
+	color: #FFF;
+}
+
+.rating-criteria-score-size .circles-text {
+	font-size: 17px;
+}
+
+.default-score-size path {
+	stroke-width: 5;
+}
+
+.small-score-size path {
+	stroke-width: 4;
+}
+
+.game-score-size path {
+	stroke-width: 7;
+}
+
+.game-user-score-size path {
+	stroke-width: 3;
+}
+
+.game-spotlight-score-size path {
+	stroke-width: 6;
+}
+
+.rating-criteria-score-size path {
+	stroke-width: 3;
+}
+
+.item-score {
+	cursor: default;
+}
+
+a .item-score {
+	cursor: pointer;
+}
+
+.item-score-classic {
+	display: inline-block;
+	border-radius: 50%;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	cursor: default;
+}
+
+.item-score-classic.default-score-size {
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+}
+
+@media (max-height: 799px) {
+
+	.rating-criteria-score-size .circles-text {
+	    font-size: 15px;
+    }
+
+    .rating-criteria-score-size path {
+	    stroke-width: 2;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+	.game-score-size path {
+		stroke-width: 9;
+	}
+
+}

@@ -1,0 +1,38 @@
+#game-index-criterias {
+    position: relative;
+    z-index: 0;
+}
+
+#game-index-criterias .title {}
+
+#game-index-criterias-filterByPlatformList {
+    visibility: hidden;
+}
+
+#game-index-criterias-filterByPlatformList,
+#prettydropdown-game-index-criterias-filterByPlatformList {
+    width: 200px;
+    z-index: 1;
+}
+
+#game-index-criterias-chart {
+    z-index: 0;
+    margin-top: 25px;
+}
+
+@media (max-width: 1199px) {
+
+    #game-index-criterias {
+        margin-bottom: 20px !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    #game-index-criterias-chart {
+        margin-top: 0 !important;
+        margin-bottom: 30px;
+    }
+
+}

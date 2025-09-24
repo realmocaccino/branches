@@ -1,0 +1,23 @@
+.btn-outline-google {
+    color: #3C4043;
+    background-color: transparent;
+    border-color: #DADCE0;
+}
+
+.btn-outline-google:hover,
+.btn-outline-google:focus,
+.btn-outline-google.active {
+    background-color: #DADCE0;
+}
+
+.dark .btn-outline-google:hover,
+.dark .btn-outline-google:focus,
+.dark .btn-outline-google.active {
+    color: var(--dark-mode-primary-color);
+}
+
+.btn-outline-google img {
+    float: left;
+    width: 24px;
+    height: 24px;
+}

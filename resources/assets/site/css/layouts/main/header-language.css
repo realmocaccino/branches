@@ -1,0 +1,116 @@
+:root {
+	--header-language-background-color: var(--primary-color);
+    --header-language-border-color: var(--tertiary-color);
+    --header-language-background-color-hover: var(--secondary-color);
+
+	--dark-mode-header-language-background-color: var(--dark-mode-secondary-color);
+    --dark-mode-header-language-border-color: var(--dark-mode-tertiary-color);
+    --dark-mode-header-language-background-color-hover: var(--site-color);
+}
+
+#header-language {
+    position: relative;
+    float: left;
+    margin-left: 25px;
+}
+
+#header-language > span {
+    font-size: 15px;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header-language > span::before {
+    background: #D4D4D4;
+    left: -10px;
+    content: '';
+    display: block;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    top: 10px;
+    bottom: 10px;
+}
+
+#header-language > span::after {
+    border-top: 4px solid #333;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    margin-left: 4px;
+    width: 0;
+    height: 0;
+    content: '';
+}
+
+#header-language ul#header-language-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    width: 50px;
+    background-color: var(--header-language-background-color);
+    box-shadow: 0 10px 20px 0 rgb(98 0 234 / 10%), 0 0 20px 0 rgb(33 33 33 / 10%);
+    z-index: 3;
+}
+
+.dark #header-language ul#header-language-menu {
+    background-color: var(--dark-mode-header-language-background-color);
+}
+
+#header-language ul#header-language-menu li {
+    border-bottom: 1px solid var(--header-language-border-color);
+}
+
+.dark #header-language ul#header-language-menu li {
+    border-color: var(--dark-mode-header-language-border-color);
+}
+
+#header-language ul#header-language-menu li a {
+    display: block;
+    padding: 6px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header-language ul#header-language-menu li a:hover,
+#header-language ul#header-language-menu li a:focus {
+    background-color: var(--header-language-background-color-hover);
+}
+
+.dark #header-language ul#header-language-menu li a:hover,
+.dark #header-language ul#header-language-menu li a:focus {
+    background-color: var(--dark-mode-header-language-background-color-hover);
+}
+
+@media (max-width: 767px) {
+
+    #header-language > span {
+        font-size: 13px;
+    }
+    
+    #header-language ul#header-language-menu li a {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    #header-language {
+        margin-left: 16px;
+    }
+
+    #header-language > span {
+        height: 42px;
+    }
+
+    #header-language > span::before {
+        left: -8px;
+    }
+
+}

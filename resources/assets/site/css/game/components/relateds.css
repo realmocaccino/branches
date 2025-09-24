@@ -1,0 +1,11 @@
+#game-relateds {
+    overflow: hidden;
+}
+
+#game-relateds ul {
+    margin-top: 0;
+}
+
+#game-relateds ul li {
+    margin-bottom: 0;
+}

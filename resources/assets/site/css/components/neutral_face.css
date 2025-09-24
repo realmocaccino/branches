@@ -1,0 +1,28 @@
+.neutral_face {
+    font-size: 180px;
+    opacity: 0.4;
+}
+
+.neutral_face_big {
+    font-size: 250px;
+}
+
+.neutral_face_small {
+    font-size: 110px;
+}
+
+@media (max-width: 991px) {
+
+	.neutral_face {
+        font-size: 150px;
+    }
+	
+}
+
+@media (max-width: 767px) {
+
+	.neutral_face {
+        font-size: 100px;
+    }
+	
+}

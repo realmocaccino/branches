@@ -1,0 +1,13 @@
+#awards {}
+
+#awards-yearSelect {
+    min-width: 120px;
+}
+
+@media (max-width: 479px) {
+
+    #awards-yearSelect {
+        min-width: 100px;
+    }
+
+}

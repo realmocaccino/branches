@@ -1,0 +1,27 @@
+#game-cover {}
+
+#game-cover-link {
+    display: block;
+    width: 100%;
+    height: 235px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(52, 52, 52, 0.2);
+}
+
+#game-cover-image {
+    width: 100%;
+    min-height: 235px;
+}
+
+@media (max-width: 767px) {
+
+    #game-cover-link {
+        height: 210px;
+    }
+    
+    #game-cover-image {
+        min-height: 210px;
+    }
+
+}

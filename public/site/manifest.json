@@ -1,0 +1,28 @@
+{
+	"short_name": "Nota do Game",
+	"name": "Nota do Game",
+	"theme_color": "#FF3E3E",
+	"background_color": "#DDD",
+	"display": "standalone",
+	"prefer_related_applications": false,
+	"icons": [
+		{  
+			"src": "favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{  
+			"src": "favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png",
+			"density": "0.75"
+		},
+		{
+			"src": "android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"density": "4.0"
+		}
+	],
+	"start_url": "/"
+}

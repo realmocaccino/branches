@@ -1,0 +1,30 @@
+#add-game-choose {}
+
+#add-game-choose-results {}
+
+#add-game-choose-results ul {}
+
+#add-game-choose-results ul li {
+    margin-bottom: 10px;
+}
+
+#add-game-choose-results ul li a {
+    display: block;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#add-game-choose-results ul li a:hover {
+    background-color: var(--tertiary-color);
+}
+
+.dark #add-game-choose-results ul li a {
+    background-color: var(--dark-mode-secondary-color);
+}
+
+.dark #add-game-choose-results ul li a:hover {
+    background-color: var(--dark-mode-tertiary-color);
+}

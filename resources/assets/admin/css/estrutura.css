@@ -1,0 +1,90 @@
+#topo {
+	background-color:#444;
+}
+
+#topo a {
+	color:#FFF;
+}
+
+#topo #nome-site {
+	text-transform:uppercase;
+	font-size:40px;
+	color:#FFF;
+}
+
+#titulo-site {
+	height:45px;
+	line-height:45px;
+	font-size:22px;
+	font-weight:bold;
+	background-color:#FF624C;
+	color:#FFF;
+	padding-left:20px;
+}
+
+#info {
+	padding:20px 0;
+	overflow:hidden;
+}
+
+#info .alert {
+	margin-top:20px;
+}
+
+#info .pull-left {
+	width:33.3%;
+}
+
+#info #busca {
+	width:33.3%;
+	display:inline-block;
+}
+
+#info #busca #remover_busca {
+	position:absolute;
+	top:8px;
+	left:-20px;
+	z-index:99999;
+}
+
+#info .pull-right {
+	width:33.3%;
+	text-align:right;
+}
+
+#formulario, #tabela {}
+
+#tabela th a {
+	color:#333;
+	text-decoration:none;
+}
+
+#tabela th .glyphicon {
+	font-size:60%;
+}
+
+#paginacao {
+	padding:20px 0;
+	text-align:center;
+}
+
+span.glyphicon {
+	cursor:default;
+}
+
+a span.glyphicon {
+	cursor:pointer;
+}
+
+.checkbox-inline {
+	margin-left:16px !important;
+	padding-left:0 !important;
+}
+
+.checkbox-inline:first-child {
+	margin-left:0 !important;
+}
+
+.icheckbox_flat-blue {
+	margin-right:4px !important;
+}

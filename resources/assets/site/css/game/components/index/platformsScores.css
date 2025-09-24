@@ -1,0 +1,42 @@
+#game-index-platformsScores {
+	text-align: left;
+}
+
+#game-index-platformsScores .title {
+    margin-left: 5px;
+}
+
+#game-index-platformsScores-table {
+	margin-bottom: 0;
+}
+
+#game-index-platformsScores th,
+#game-index-platformsScores td {
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.game-index-platformsScores-platformRow td {
+	height: 74px;
+}
+
+#game-index-platformsScores-showHiddenPlatformsRow {
+	display: none;
+}
+
+#game-index-platformsScores-showHiddenPlatformsButton {
+	font-weight: bold;
+    display: block;
+}
+
+#game-index-platformsScores .game-total-ratings-decoration {
+	border-bottom: 1px solid #444;
+}
+
+@media (max-width: 575px) {
+
+    .game-index-platformsScores-chart {
+        display: none;
+    }
+
+}

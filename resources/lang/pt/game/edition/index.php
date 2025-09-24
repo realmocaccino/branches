@@ -1,0 +1,40 @@
+<?php
+
+return [
+
+    'name_label' => 'Nome',
+    'name_placeholder' => 'Insira o nome do jogo',
+    'alternative_name_label' => 'Nome Alternativo',
+    'alternative_name_placeholder' => 'O jogo tem algum apelido?',
+    'description_label' => 'Descrição',
+    'description_placeholder' => 'Encontre uma descrição para o jogo',
+    'release_date_label' => 'Data de Lançamento',
+    'release_date_placeholder' => 'Insira a primeira data de lançamento do jogo',
+    'early_access_label' => 'Está em acesso antecipado?',
+    'trailer_label' => 'Trailer de Lançamento',
+    'trailer_placeholder' => 'Insira a URL do vídeo do Youtube',
+    'platforms_label' => 'Plataformas',
+    'platforms_placeholder' => 'Selecione a(s) plataforma(s) do jogo',
+    'genres_label' => 'Gêneros',
+    'genres_placeholder' => 'Selecione o(s) gênero(s) do jogo',
+    'modes_label' => 'Modos de Jogo',
+    'characteristics_label' => 'Características',
+    'characteristics_placeholder' => 'Selecione a(s) característica(s) do jogo',
+    'themes_label' => 'Temas',
+    'themes_placeholder' => 'Selecione a(s) tema(s) do jogo',
+    'developers_label' => 'Desenvolvedoras',
+    'developers_placeholder' => 'Selecione a(s) desenvolvedora(s) do jogo',
+    'publishers_label' => 'Publicadoras',
+    'publishers_placeholder' => 'Selecione a(s) publicadora(s) do jogo',
+    'franchises_label' => 'Franquias',
+    'franchises_placeholder' => 'Selecione a(s) franquia(s) do jogo',
+    'parental_rating_label' => 'Classificação Indicativa',
+    'parental_rating_placeholder' => 'Selecione a faixa etária do jogo',
+    'cover_label' => 'Capa do Jogo',
+    'cover_ideal_size' => 'Dimensão ideal',
+    'cover_width' => 'de largura',
+    'cover_height' => 'de altura',
+    'submit' => 'Solicitar',
+    'update' => 'Atualizar'
+
+];

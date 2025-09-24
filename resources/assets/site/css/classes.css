@@ -1,0 +1,136 @@
+.add-game-insert-manually-button {
+    color: #777 !important;
+}
+
+.add-score {
+    border: 2px dashed #888;
+    border-radius: 50%;
+    color: #888;
+    display: block;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    width: 35px;
+}
+
+.add-score:hover,
+.add-score:focus {
+    border-color: var(--site-color) !important;
+    color: var(--site-color) !important;
+}
+
+.dark .add-score {
+    border-color: #CCC;
+    color: #CCC;
+}
+
+.dark .form-control {
+	border-color: var(--dark-mode-input-border-color);
+}
+
+.dark .ordinary-text {
+    color: #FFF;
+}
+
+.dark .sumup-expand {
+    background-color: var(--dark-mode-tertiary-color);
+}
+
+.descriptive {
+    color: #888;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.featured {
+    border-bottom: 1px dotted #444;
+    padding-bottom: 2px;
+}
+
+.featured:hover,
+.featured:focus {
+    border-bottom: 1px solid #666;
+}
+
+.form-control {
+    border-color: var(--input-border-color);
+    font-weight: bold;
+}
+
+.hide-ads .google-auto-placed {
+    display: none;
+}
+
+.highlighted {
+    background-color: rgba(255, 62, 62, 0.5);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.noBorder {
+    border: 0 !important;
+}
+
+.oi {
+	font-size: 11px;
+}
+
+.ordinary-text {
+    color: #666;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.overlay {
+    background-color: #000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-item.active .page-link {
+	color: #FFF;
+	background-color: var(--site-color);
+	border-color: var(--site-color);
+	z-index: 0;
+}
+
+.page-link,
+.page-link:hover {
+	color: var(--site-color);
+}
+
+.rankingPosition {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sumup-expand {
+    background-color: var(--tertiary-color);
+    font-weight: bold;
+    padding-left: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.total-user-ratings,
+.total-user-reviews {
+    font-weight: bold;
+}
+
+.underscore {
+    border-bottom: 1px solid #444;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.underscore:hover,
+.underscore:focus {
+    border-bottom: 0;
+}

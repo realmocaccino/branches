@@ -1,0 +1,57 @@
+#game-details {
+    font-size: 13px;
+}
+
+#game-details .table {
+    margin-bottom: 0;
+}
+
+#game-details tr {}
+
+#game-details tr td {
+    padding: .60rem;
+}
+
+#game-details tr td:first-child {
+    width: 18%;
+    font-weight: bold;
+}
+
+#game-details tr td .badge {
+    padding: 6px;
+    margin-bottom: 4px;
+    font-size: 11px;
+}
+
+#game-details-genres td,
+#game-details-modes td,
+#game-details-themes td,
+#game-details-characteristics td,
+#game-details-platforms td,
+#game-details-developers td,
+#game-details-publishers td,
+#game-details-franchises td {
+    padding-bottom: -4px;
+}
+
+#game-details-correct {
+    text-align: right;
+    font-size: 12px;
+}
+
+@media (max-width: 479px) {
+
+    #game-details {
+        font-size: 13px;
+    }
+
+    #game-details td, #game-details th {
+        padding: 0.5rem;
+    }
+
+    #game-details tr td .badge {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+}

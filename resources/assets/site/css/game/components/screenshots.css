@@ -1,0 +1,36 @@
+.game-screenshots {}
+
+.game-screenshots-list {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 -10px -10px 0;
+}
+
+.game-screenshots-list a {
+	flex: 0 0 calc(33% - 10px);
+	margin: 0 10px 10px 0;
+}
+
+.game-screenshots-list a img {
+	border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+
+    .game-screenshots-list a {
+	    flex: 0 0 calc(25% - 10px);
+    }
+	
+}
+
+@media (max-width: 479px) {
+
+    .game-screenshots-list a {
+	    flex: 0 0 calc(33% - 10px);
+    }
+    
+    .game-screenshots-list a:nth-child(10) {
+	    display: none;
+    }
+	
+}

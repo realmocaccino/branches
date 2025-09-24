@@ -1,0 +1,29 @@
+:root {
+	--primary-color: #FFF;
+	--secondary-color: #EEE;
+	--tertiary-color: #DDD;
+
+	--primary-font-color: #1E2939;
+	--secondary-font-color: #000;
+
+    --dark-mode-primary-color: #1C1E24;
+	--dark-mode-secondary-color: #2B3139;
+	--dark-mode-tertiary-color: #484D55;
+
+	--dark-mode-primary-font-color: #EEE;
+	--dark-mode-secondary-font-color: #FFF;
+
+	--dialog-color: #FFF;
+	--dark-mode-dialog-color: #252830;
+
+	--site-color: #FF3E3E;
+	--site-secondary-color: #FFF;
+
+	--link-color: #1E2939;
+	--input-border-color: #CCC;
+
+	--dark-mode-link-color: #EEE;
+	--dark-mode-input-background-color: #32353B;
+	--dark-mode-input-color: #FFF;
+	--dark-mode-input-border-color: #00272E;
+}

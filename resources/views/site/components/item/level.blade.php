@@ -1,0 +1,1 @@
+<div class="item-level" title="Level">{{ $level }}</div>

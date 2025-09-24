@@ -1,0 +1,114 @@
+:root {
+	--login-register-tab-border-color-effect: var(--dialog-color);
+
+	--dark-mode-login-register-tab-border-color-effect: var(--dark-mode-dialog-color);
+}
+
+#login-register {
+	padding: 0;
+	width: 420px;
+	text-align: center;
+}
+
+#login-register-logo {
+	margin: 25px auto 30px;
+	display: inline-block;
+}
+
+#login-register-tabs {}
+
+#login-register-tabs ul#login-register-tabs-buttons {
+	border-bottom: 2px solid #CCC;
+}
+
+#login-register-tabs ul#login-register-tabs-buttons li {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	border: 2px solid var(--login-register-tab-border-color-effect);
+	border-bottom: 0;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 13px 31px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.dark #login-register-tabs ul#login-register-tabs-buttons li {
+	border-color: var(--dark-mode-login-register-tab-border-color-effect);
+}
+
+#login-register-tabs ul#login-register-tabs-buttons li.active {
+	border: 2px solid #CCC;
+	border-bottom-color: var(--login-register-tab-border-color-effect);
+}
+
+.dark #login-register-tabs ul#login-register-tabs-buttons li.active {
+	border-bottom-color: var(--dark-mode-login-register-tab-border-color-effect);
+}
+
+#login-register-tabs .social-group {
+	margin-top: 25px;
+}
+
+#login-register-tabs #login-register-tabs-contents {
+	margin-top: 10px;
+	text-align: left;
+}
+
+#login-register-tabs #login-register-tabs-contents li {
+	display: none;
+}
+
+#login-register-tabs #login-register-tabs-contents li.active {
+	display: block;
+}
+
+#login-register-tabs #login-register-tabs-contents .login-register-error {
+	display: block;
+	color: #F30;
+	font-weight: bold;
+	text-align: center;
+}
+
+#login-register-tabs #login-register-tabs-contents .form-group:last-of-type {
+	margin-bottom: 5px;
+}
+
+#login-register-tabs #login-register-tabs-contents #form-register-terms {
+	margin-left: 10px;
+}
+
+#login-register-tabs #login-register-tabs-contents #form-register-terms-label {
+	font-size: 13px;
+	margin-left: 0;
+}
+
+#login-register-tabs #login-register-tabs-contents li #form-login #form-login-last-group button {
+	margin-bottom: 10px;
+}
+
+#login-register-tabs label {
+    margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+
+	#login-register {
+		width: 100%;
+	}
+	
+	#login-register-tabs ul#login-register-tabs-buttons li {
+		font-size: 16px;
+		padding: 13px 20px;
+	}
+	
+}
+
+@media (max-width: 479px) {
+	
+	#login-register-logo {
+		margin: 10px auto 20px;
+	}
+	
+}

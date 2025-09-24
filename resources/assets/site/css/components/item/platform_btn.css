@@ -1,0 +1,59 @@
+.platform-btn {
+	margin: 0 8px 8px 0;
+	background-color: #FFF;
+	color: #333;
+	border-radius: 12px;
+}
+
+.platform-btn:hover,
+.platform-btn:focus,
+.platform-btn.active {
+	background-color: var(--site-color) !important;
+	color: #FFF;
+}
+
+.platform-btn-name {
+	display: inline;
+}
+
+.platform-btn-initials {
+	display: none;
+}
+
+@media (max-width: 991px) {
+
+	.platform-btn {
+		width: 31%;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	
+	.platform-btn-name {
+		display: none;
+	}
+	
+	.platform-btn-initials {
+		display: inline;
+	}
+	
+}
+
+@media (max-width: 575px) {
+
+	.platform-btn {
+		width: 29.5%;
+	}
+
+}
+
+@media (max-width: 431px) {
+	
+	.platform-btn {
+		width: 21%;
+		font-size: 13px;
+		padding: 5px;
+	}
+	
+}

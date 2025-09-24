@@ -1,0 +1,11 @@
+#game-collections {
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+
+    #game-collections .item-collection {
+        width: 280px;
+    }
+
+}

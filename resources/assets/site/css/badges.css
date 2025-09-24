@@ -1,0 +1,29 @@
+.badge {
+	cursor: default;
+	width: intrinsic;
+	width: -moz-max-content;
+	width: -webkit-max-content;
+}
+
+a .badge,
+a.badge {
+	cursor: pointer;
+	color: #FFF !important;
+}
+
+.badge-big {
+    padding: .4rem .6rem;
+}
+
+.badge-site {
+	color: #FFF;
+	background-color: var(--site-color);
+}
+
+@media (max-width: 991px) {
+
+	.badge {
+		width: auto;
+	}
+
+}

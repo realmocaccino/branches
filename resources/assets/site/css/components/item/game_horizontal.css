@@ -1,0 +1,104 @@
+.item-game-horizontal {
+	position: relative;
+	width: 100%;
+	height: 86px;
+}
+
+.item-game-horizontal .item-game-link {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 86px;
+	display: block;
+	padding: 8px;
+	line-height: normal;
+	text-align: left;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.item-game-horizontal .item-game-link.highlight {
+	background-color: var(--site-color) !important;
+	color: #FFF !important;
+}
+
+.item-game-horizontal .item-game-link .item-game-image {
+	float: left;
+}
+
+.item-game-horizontal .item-game-link .item-game-image img {
+	width: 60px;
+	height: 70px;
+	border-radius: 6px;
+}
+
+.item-game-horizontal .item-game-link .item-game-data {
+	float: left;
+	margin: 10px 0 0 12px;
+	width: calc(100% - 141px);
+	font-weight: bold;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-name {
+    font-size: 16px;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-name.name-too-long {}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom {
+	margin-top: 6px;
+	font-size: 12px;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-release {
+	display: inline-block;
+	margin-right: 5px;
+	color: #777;
+}
+
+.item-game-horizontal .item-game-link.highlight .item-game-data .item-game-data-bottom .item-game-release {
+    color: #DDD;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-platforms {
+	display: none;
+	font-size: 11px;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-platforms li {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-platforms li:last-child {
+	margin-right: 0;
+}
+
+.item-game-horizontal .item-game-link .item-game-data .item-game-data-bottom .item-game-platforms li .item-platform {
+	width: 16px;
+	height: 16px;
+}
+
+.item-game-horizontal .item-game-score {
+	position: absolute;
+	top: 18px;
+	right: 5px;
+	width: 50px;
+}
+
+.item-game-horizontal .item-game-score .add-score {
+	margin: 7px 0 0 7px;
+}
+
+.item-game-horizontal .item-game-score.highlight .add-score {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.item-game-horizontal .item-game-score.highlight .circles-text {
+	color: #FFF;
+}
+
+@media (max-width: 767px) {}

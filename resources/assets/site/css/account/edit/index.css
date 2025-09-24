@@ -1,0 +1,18 @@
+#account-edit-links .btn {}
+
+@media (min-width: 480px) {
+	
+	#account-edit-links .btn:first-child {
+	    margin-right: 5px;
+	}
+	
+}
+
+@media (max-width: 479px) {
+	
+	#account-edit-links .btn {
+	    font-size: 12px;
+	    padding: 3px 6px;
+	}
+	
+}

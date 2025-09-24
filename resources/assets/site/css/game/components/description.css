@@ -1,0 +1,20 @@
+.game-description {
+	text-align: justify;
+	line-height: 32px;
+	font-size: 17px;
+}
+
+.game-description-classification {
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+.game-description-classification-icon {
+    width: 20px;
+    margin-top: -2px;
+}
+
+.game-description-add {
+    font-size: 14px;
+    font-weight: bold;
+}

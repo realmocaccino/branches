@@ -1,0 +1,105 @@
+:root {
+    --item-game-background-color: var(--secondary-color);
+    --item-game-background-color-hover: var(--tertiary-color);
+	--item-game-image-background-color: var(--tertiary-color);
+    --item-game-image-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .4);
+
+    --dark-mode-item-game-background-color: var(--dark-mode-secondary-color);
+    --dark-mode-item-game-background-color-hover: var(--dark-mode-tertiary-color);
+	--dark-mode-item-game-image-background-color: var(--dark-mode-primary-color);
+    --dark-mode-item-game-image-box-shadow: 0 10px 20px 0 rgb(98 0 234 / 4%), 0 0 20px 0 rgb(33 33 33 / 4%);
+}
+
+.item-game {
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	text-align: left;
+	line-height: 23px;
+	overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--item-game-background-color);
+    transition: background-color 0.2s ease;
+}
+
+.item-game:hover {
+    background-color: var(--item-game-background-color-hover);
+}
+
+.dark .item-game {
+    background-color: var(--dark-mode-item-game-background-color);
+}
+
+.dark .item-game:hover {
+    background-color: var(--dark-mode-item-game-background-color-hover);
+}
+
+.item-game .item-game-link .item-game-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: var(--item-game-image-box-shadow);
+}
+
+.dark .item-game .item-game-link .item-game-image {
+	box-shadow: var(--dark-mode-item-game-image-box-shadow);
+}
+
+.item-game .item-game-link .item-game-image img {
+	width: 100%;
+	min-height: 200px;
+}
+
+.item-game .item-game-link .item-game-data {
+    position: relative;
+    padding: 20px 16px 15px;
+    min-height: 108px;
+	font-weight: bold;
+}
+
+.item-game .item-game-link .item-game-data .item-game-name {
+    font-size: 15px;
+    width: calc(100% - 40px);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.listing-sevenColumns .item-game .item-game-link .item-game-data .item-game-name,
+.listing-sixColumns .item-game .item-game-link .item-game-data .item-game-name {
+    font-size: 15px;
+}
+
+.item-game.item-gameWithoutScore .item-game-link .item-game-data .item-game-name {
+    width: 100%;
+}
+
+.item-game .item-game-link .item-game-data .item-game-release {
+    margin-top: 2px;
+    font-size: 13px;
+	color: #888;
+}
+
+.item-game .item-game-score {
+    position: absolute;
+    top: 18px;
+    right: 8px;
+}
+
+.item-game .item-game-score .add-score {
+    margin: 5px 3px 0;
+}
+
+.item-game .item-game-score .item-score-classic {
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px #CCC;
+}
+
+@media (max-width: 479px) {
+    
+    .item-game .item-game-link .item-game-data .item-game-name {
+        font-size: 15px;
+    }
+    
+}

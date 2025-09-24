@@ -1,0 +1,118 @@
+.item-rating {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 24px;
+	line-height: normal;
+	text-align: left;
+	overflow: hidden;
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 2px 6px rgba(112, 112, 112, 0.2);
+	border-radius: 24px;
+}
+
+.dark .item-rating {
+	background-color: var(--dark-mode-secondary-color);
+	border-color: var(--dark-mode-secondary-color);
+}
+
+.item-rating hr {
+	border-color: var(--tertiary-color);
+}
+
+.dark .item-rating hr {
+	border-color: var(--dark-mode-tertiary-color);
+}
+
+.item-rating .item-rating-header {}
+
+.item-rating .item-rating-header .item-rating-header-data {
+	float: left;
+	margin-right: 10px;
+	width: calc(100% - 60px);
+	line-height: normal;
+	font-size: 14px;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-user-picture,
+.item-rating .item-rating-header .item-rating-header-data .item-game-picture {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-user-picture .item-user-picture-image,
+.item-rating .item-rating-header .item-rating-header-data .item-game-picture .item-game-picture-image {
+    width: 48px;
+	height: 55px;
+	box-shadow: 0 7px 8px -8px rgba(0, 0, 0, .8);
+	border-radius: 8px;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-game-name,
+.item-rating .item-rating-header .item-rating-header-data .item-rating-user-name {
+	margin-top: 6px;
+	font-weight: bold;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-game-name:hover,
+.item-rating .item-rating-header .item-rating-header-data .item-rating-user-name:hover {
+	color: var(--site-color);
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom {
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-details {}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-details .item-rating-platform {
+	display: inline-block;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-details .item-rating-platform img {
+	width: 16px;
+	height: 16px;
+}
+
+.item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-actions {
+	margin-top: 6px;
+	font-size: 15px;
+}
+
+.item-rating .item-rating-header .item-rating-header-score {
+	float: right;
+	width: 50px;
+}
+
+.item-rating .item-rating-chart {
+    margin-top: 10px;
+}
+
+.item-rating .item-rating-criterias {
+	margin: 10px 0 0;
+}
+
+.item-rating .item-rating-criterias td {
+	border-color: var(--dark-mode-tertiary-color);
+	padding: 8px;
+}
+
+@media (max-width: 991px) {
+
+	.item-rating {
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.item-rating .item-rating-data {
+		width: calc(100% - 141px);
+		margin-left: 8px;
+	}
+	
+	.item-rating .item-rating-data .item-rating-data-bottom {
+		font-size: 11px;
+	}
+	
+}

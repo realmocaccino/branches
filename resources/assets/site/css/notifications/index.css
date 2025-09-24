@@ -1,0 +1,44 @@
+#notifications {}
+
+#notifications ul#notifications-list {
+	margin-bottom: 10px;
+}
+
+#notifications ul#notifications-list li {
+	padding: 10px 0;
+	border-bottom: 1px solid #DDD;
+	font-size: 14px;
+}
+
+#notifications ul#notifications-list li .notification-new {
+	color: var(--site-color);
+}
+
+#notifications ul#notifications-list li .notification-text {}
+
+#notifications ul#notifications-list li .notification-separator {}
+
+#notifications ul#notifications-list li .notification-date {
+	font-style: italic;
+}
+
+#notifications ul#notifications-list li a {
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+
+	#notifications ul#notifications-list li .notification-text {
+		display: block;
+		line-height: 24px;
+	}
+
+	#notifications ul#notifications-list li .notification-separator {
+		display: none;
+	}
+	
+	#notifications ul#notifications-list li .notification-date {
+		display: block;
+	}
+
+}

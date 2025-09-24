@@ -1,0 +1,28 @@
+.distributionRatingsChart {
+	width: 100%;
+	height: 18px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.distributionRatingsChartBar {
+	float: left;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	cursor: default;
+}
+
+.distributionRatingsChartBarHigh {
+	background-color: #238823;
+}
+
+.distributionRatingsChartBarMedium {
+	background-color: #FFBF00;
+}
+
+.distributionRatingsChartBarLow {
+	background-color: #D2222D;
+}

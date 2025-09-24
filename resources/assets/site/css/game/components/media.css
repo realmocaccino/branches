@@ -1,0 +1,21 @@
+#game-media {}
+
+#game-media-screenshots {}
+
+#game-media-screenshots section:last-of-type {
+    margin-bottom: 0;
+}
+
+#game-media-screenshots .title {
+    display: none;
+}
+
+#game-media-trailer {}
+
+#game-media-trailer #game-trailer {
+    margin-bottom: 0;
+}
+
+#game-media-trailer .title {
+    display: none;
+}

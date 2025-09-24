@@ -1,0 +1,242 @@
+.btn {
+	font-weight: bold;
+	font-size: 15px;
+	padding: 7px 11px;
+	border-width: 2px;
+	border-radius: 20px;
+}
+
+.btn a {
+    color: #FFF;
+}
+
+.btn:focus, .btn:active {
+	box-shadow: none !important;
+}
+
+.btn-small {
+	padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.btn-extra-small {
+    padding: 2px 8px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+.btn-site {
+	color: #FFF;
+	background-color: var(--site-color);
+}
+
+.btn-site:hover,
+.btn-site:focus,
+.btn-site.active {
+	color: #FFF;
+	background-color: #FF1B1B;
+}
+
+.btn-outline-site {
+    color: var(--site-color);
+    background-color: transparent;
+    border-color: var(--site-color);
+}
+
+.btn-outline-site:hover,
+.btn-outline-site:focus,
+.btn-outline-site.active {
+	color: #FFF;
+	background-color: var(--site-color);
+}
+
+.btn-site-light {
+	color: #030303;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.btn-site-light:hover,
+.btn-site-light:focus,
+.btn-site-light.active {
+    color: #030303;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-socialite {
+    font-size: 16px;
+    text-align: center;
+    color: #FFF !important;
+    border-radius: .25rem;
+}
+
+.btn-socialite:hover,
+.btn-socialite:focus {
+    opacity: 0.9;
+}
+
+.btn-socialite-facebook {
+    background-color: #3B5998;
+}
+
+.btn-socialite-google {
+    background-color: #FF3333;
+}
+
+.btn-socialite-twitter {
+    background-color: #55ACEE;
+}
+
+.btn-socialite .fa {
+	margin-right: 5px;
+}
+
+.dark .btn-link {
+    color: var(--dark-mode-primary-font-color) !important;
+}
+
+.dark .btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+    color: #ffffff;
+}
+
+.dark .btn-outline-primary {
+    color: #dddddd;
+    border-color: #4e73df;
+}
+
+.dark .btn-secondary {
+    background-color: var(--dark-mode-tertiary-color);
+    border-color: var(--dark-mode-tertiary-color);
+    color: #ffffff;
+}
+
+.dark .btn-outline-secondary {
+    color: #dddddd;
+    border-color: #6c757d;
+}
+
+.dark .btn-success {
+    background-color: #18a05e;
+    border-color: #18a05e;
+    color: #ffffff;
+}
+
+.dark .btn-outline-success {
+    color: #dddddd;
+    border-color: #1cc88a;
+}
+
+.dark .btn-danger {
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+    color: #ffffff;
+}
+
+.dark .btn-outline-danger {
+    color: #dddddd;
+    border-color: #e74a3b;
+}
+
+.dark .btn-warning {
+    background-color: #f6c23e;
+    border-color: #f6c23e;
+    color: #ffffff;
+}
+
+.dark .btn-outline-warning {
+    color: #dddddd;
+    border-color: #f6c23e;
+}
+
+.dark .btn-info {
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+    color: #ffffff;
+}
+
+.dark .btn-outline-info {
+    color: #dddddd;
+    border-color: #36b9cc;
+}
+
+.dark .btn-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #ffffff;
+}
+
+.dark .btn-outline-light {
+    color: #dddddd;
+    border-color: #f8f9fa;
+}
+
+.dark .btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #ffffff;
+}
+
+.dark .btn-outline-dark {
+    color: #dddddd;
+    border-color: #343a40;
+}
+
+.dark .btn-primary:hover {
+    background-color: #375bb5;
+    border-color: #375bb5;
+}
+
+.dark .btn-secondary:hover {
+    background-color: var(--dark-mode-secondary-color);
+    border-color: var(--dark-mode-secondary-color);
+}
+
+.dark .btn-success:hover {
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
+
+.dark .btn-danger:hover {
+    background-color: #d63a2f;
+    border-color: #d63a2f;
+}
+
+.dark .btn-warning:hover {
+    background-color: #e2b935;
+    border-color: #e2b935;
+}
+
+.dark .btn-info:hover {
+    background-color: #2a9da7;
+    border-color: #2a9da7;
+}
+
+.dark .btn-light:hover {
+    background-color: #dee2e6;
+    border-color: #dee2e6;
+}
+
+.dark .btn-dark:hover {
+    background-color: #2c3034;
+    border-color: #2c3034;
+}
+
+@media (max-width: 1199px) {
+
+	.btn-socialite {
+		padding: 8px;
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width: 479px) {
+
+	button.btn:not(.btn-sm):first-child, :not(a) + button.btn:not(.btn-sm) {
+        display: block;
+        width: 100%;
+    }
+
+}

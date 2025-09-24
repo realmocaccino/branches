@@ -1,0 +1,34 @@
+#premium-benefits {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+#premium-benefits h2 {
+    display: inline;
+}
+
+#premium-benefits ul {}
+
+#premium-benefits ul li {}
+
+#premium-benefits ul li#premium-benefits-inDevelopment {
+    margin-top: 30px;
+    color: #777;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    
+    #premium-benefits {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 479px) {
+    
+    #premium-benefits {
+        font-size: 19px;
+    }
+
+}

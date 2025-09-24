@@ -1,0 +1,219 @@
+.item-review {
+	clear: both;
+	overflow: hidden;
+	border: 1px solid var(--secondary-color);
+    border-radius: 24px;
+    padding: 24px;
+	text-align: left;
+	background-color: var(--secondary-color);
+}
+
+.dark .item-review {
+	background-color: var(--dark-mode-secondary-color);
+	border-color: var(--dark-mode-secondary-color);
+}
+
+.item-review:not(:last-of-type) {
+	margin-bottom: 50px;
+}
+
+.item-review hr {
+	border-color: var(--tertiary-color);
+}
+
+.dark .item-review hr {
+	border-color: var(--dark-mode-tertiary-color);
+}
+
+.item-review .item-review-header {
+	overflow: hidden;
+}
+
+.item-review .item-review-header .item-review-header-data {
+	float: left;
+	margin-right: 10px;
+	width: calc(100% - 60px);
+	line-height: normal;
+	font-size: 14px;
+}
+
+.item-review .item-review-header .item-review-header-data .item-user-picture,
+.item-review .item-review-header .item-review-header-data .item-game-picture {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-review .item-review-header .item-review-header-data .item-user-picture .item-user-picture-image,
+.item-review .item-review-header .item-review-header-data .item-game-picture .item-game-picture-image {
+    width: 48px;
+	height: 55px;
+	box-shadow: 0 7px 8px -8px rgba(0, 0, 0, .8);
+	border-radius: 8px;
+}
+
+.item-review .item-review-header .item-review-header-data .item-review-game-name,
+.item-review .item-review-header .item-review-header-data .item-review-user-name {
+    padding-top: 8px;
+	font-weight: bold;
+}
+
+.item-review .item-review-header .item-review-header-data .item-review-game-name:hover,
+.item-review .item-review-header .item-review-header-data .item-review-user-name:hover {
+	color: var(--site-color);
+}
+
+.item-review .item-review-header .item-review-header-data .item-review-header-data-bottom {
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.item-review .item-review-header .item-review-header-data .item-review-header-data-bottom .item-review-platform {
+	display: inline-block;
+}
+
+.item-review .item-review-header .item-review-header-data .item-review-header-data-bottom .item-review-platform img {
+	width: 16px;
+	height: 16px;
+}
+
+.item-review .item-review-header .item-review-header-score {
+	float: right;
+	width: 50px;
+}
+
+.item-review .item-review-body {}
+
+.item-review .item-review-hasSpoilers {
+    font-weight: bold;
+    color: #C31906;
+}
+
+.item-review .item-review-text {
+	text-align: justify;
+	line-height: 34px;
+	white-space: pre-line;
+}
+
+.item-review .item-review-footer {}
+
+.item-review .item-review-footer .item-review-share,
+.item-review .item-review-footer .item-review-actions,
+.item-review .item-review-footer .item-review-feedback {
+	font-size: 14px;
+}
+
+.item-review .item-review-footer .item-review-actions .badge,
+.item-review .item-review-footer .item-review-feedback .badge {
+	font-size: 85%;
+}
+
+.item-review .item-review-footer .item-review-actions {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-review .item-review-footer .item-review-share {
+	float: left;
+}
+
+.item-review .item-review-footer .item-review-share p {
+	float: left;
+}
+
+.item-review .item-review-footer .item-review-share .item-review-share-list {
+	float: left;
+	margin-left: 5px;
+}
+
+.item-review .item-review-footer .item-review-share li {
+	float: left;
+	margin-right: 3px;
+}
+
+#game-share-list {
+	float: left;
+}
+
+#game-share-list li {
+	float: left;
+	margin-left: 5px;
+}
+
+.item-review .item-review-footer .item-review-feedback {
+	float: right;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group {
+	float: left;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group.item-review-feedback-positive {}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group.item-review-feedback-negative {
+    margin-left: 6px;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group .item-review-feedback-button,
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group .item-review-feedback-counter {
+    padding: 6px 8px;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group .item-review-feedback-button {
+    border-radius: 7px 0 0 7px;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group .item-review-feedback-counter {
+    border-radius: 0 7px 7px 0;
+}
+
+.item-review .item-review-footer .item-review-feedback .item-review-feedback-group .item-review-feedback-counter {
+	margin-left: 1px;
+}
+
+.item-review .review-write-form {
+	display: none;
+	width: 100%;
+}
+
+.item-review .review-write-form .review-write-form-textarea {
+	height: 150px;
+}
+
+@media (max-width: 991px) {
+
+	.item-review .item-review-header .item-review-header-data .item-user-picture,
+	.item-review .item-review-header .item-review-header-data .item-game-picture {
+		margin-right: 8px;
+	}
+
+	.item-review .review-write-form .review-write-form-textarea {
+		height: 200px;
+	}
+
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {
+	
+	.item-review {}
+	
+	.item-review .item-review-header .item-review-header-data {
+		font-size: 14px;
+	}
+	
+	.item-review .item-review-header-data-bottom {}
+	
+	.item-review .item-review-footer .item-review-actions {
+		float: none;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	
+	.item-review .item-review-footer .item-review-share p {
+		float: none;
+		font-size: 13px;
+		margin-bottom: 2px;
+	}
+	
+}

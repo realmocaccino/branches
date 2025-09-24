@@ -1,0 +1,1 @@
+<a href="{{ route('tag', [$tag, $entity->slug]) }}" @if($class) class="{{ $class }} {{ $class }}-{{ $colorClass }}" @endif>{{ $item ?? $entity->name }}</a>

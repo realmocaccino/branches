@@ -1,0 +1,15 @@
+#collection-orderPage {}
+
+#collection-orderPage ul.sortable {}
+
+#collection-orderPage ul.sortable li .item-game-data {
+    display: none;
+} 
+
+@media (max-width: 575px) {
+
+    #collection-orderPage ul.sortable {
+        padding: 0 25px;
+    }
+
+}

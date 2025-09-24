@@ -1,0 +1,49 @@
+:root {
+	--title-color: var(--primary-font-color);
+	--title-color-hover: var(--site-color);
+
+	--dark-mode-title-color: var(--dark-mode-secondary-font-color);
+	--dark-mode-title-color-hover: var(--site-color);
+}
+
+.title {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.title h3 {
+	font-weight: bold;
+	font-size: 32px;
+	color: var(--title-color);
+}
+
+.dark .title h3 {
+	color: var(--dark-mode-title-color);
+}
+
+.title h3 a:hover {
+	color: var(--title-color-hover-color);
+}
+
+.dark .title h3 a:hover {
+	color: var(--dark-mode-title-color-hover);
+}
+
+.title .title-arrow {
+    position: relative;
+    top: -3px;
+    left: 2px;
+    font-size: 20px;
+}
+
+@media (max-width: 575px) {
+
+	.title h3 {
+		font-size: 26px;
+	}
+	
+	.title .title-arrow {
+        font-size: 18px;
+    }
+	
+}

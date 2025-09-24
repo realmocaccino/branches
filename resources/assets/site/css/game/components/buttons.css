@@ -1,0 +1,34 @@
+#game-buttons {
+    position: relative;
+}
+
+#game-buttons #game-buttons-main {
+    width: 78%;
+    float: left;
+}
+
+#game-buttons #game-buttons-collections {
+    width: 18%;
+    float: right;
+}
+
+#game-buttons > div > .btn {
+    border-radius: 28px;
+    padding: 9px 14px;
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+
+    #game-buttons > div > .btn {
+        border-radius: 24px;
+        padding: 8px 13px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 479px) {}

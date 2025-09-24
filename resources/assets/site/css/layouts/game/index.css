@@ -1,0 +1,74 @@
+:root {
+	--game-background-color: var(--primary-color);
+
+	--dark-mode-game-background-color: var(--dark-mode-primary-color);
+}
+
+#game-background {
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--tertiary-color);
+    height: 300px;
+    overflow: hidden;
+}
+
+.dark #game-background {
+    background-color: var(--dark-mode-secondary-color);
+    border-color: var(--dark-mode-tertiary-color);
+}
+
+#game {
+    margin-top: -275px;
+    padding: 0;
+    background: transparent;
+}
+
+#game.container {
+    max-width: 1550px;
+}
+
+#game section {
+	margin-bottom: 40px;
+}
+
+#game section:not(.not-bordered, #game-header section) {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 24px;
+    padding: 24px 33.5px;
+}
+
+.dark #game section:not(.not-bordered, #game-header section) {
+    background-color: var(--dark-mode-secondary-color);
+    border-color: var(--dark-mode-tertiary-color);
+}
+
+#game section .title {
+    margin-bottom: 20px;
+}
+
+#game section .title h3 {
+	font-size: 26px;
+}
+
+#game-left {}
+
+#game-right {
+    height: fit-content;
+}
+
+@media (max-width: 767px) {
+
+    #game-background {
+        height: 250px;
+        background-position: top center;
+    }
+
+    #game {
+        margin-top: -180px;
+    }
+
+    #game section:not(.not-bordered, #game-header section) {
+        padding: 24px 20px;
+    }
+
+}

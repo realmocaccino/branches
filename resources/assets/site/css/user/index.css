@@ -1,0 +1,99 @@
+#user-index {}
+
+#user-index-ratings {}
+
+#user-index-collection {
+    margin-bottom: 10px;
+}
+
+#user-index-collection .listing-items > li {
+    margin-bottom: 30px;
+}
+
+#user-index-reviews {}
+
+.user-index-section {
+	margin-bottom: 50px;
+}
+
+.user-index-section-contrast {
+	background-color: var(--secondary-color);
+	border-radius: 25px;
+	padding: 24px 33.5px;
+}
+
+.dark .user-index-section-contrast {
+	background-color: var(--dark-mode-secondary-color);
+}
+
+.user-index-section-contrast .item-game {
+	background-color: var(--secondary-color);
+}
+
+.user-index-section-contrast .item-game:hover {
+	background-color: var(--tertiary-color);
+}
+
+.dark .user-index-section-contrast .item-game {
+	background-color: var(--dark-mode-primary-color);
+}
+
+.dark .user-index-section-contrast .item-game:hover {
+	background-color: var(--dark-mode-tertiary-color);
+}
+
+.user-index-moreBtn  {
+	margin-top: 15px;
+	clear: both;
+}
+
+#user-index-noRatings {
+    width: 100%;
+    text-align: center;
+}
+
+#user-index-following {}
+
+#user-index-followers {}
+
+@media (max-width: 767px) {
+	
+	.user-index-collection-games li:nth-child(n+5) {
+	    display: none;
+	}
+	
+	.user-index-collection-games li {
+        width: calc((100% - 12px) / 4);
+    }
+	
+}
+
+@media (max-width: 575px) {
+	
+	.user-index-section .col-12 {
+		padding: 0;
+	}
+	
+}
+
+@media (max-width: 479px) {
+	
+	.user-index-section-contrast {
+		background-color: transparent;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.dark .user-index-section-contrast {
+		background-color: transparent;
+	}
+
+	.user-index-section-contrast .item-game {
+		background-color: var(--item-game-background-color);
+	}
+	
+	.dark .user-index-section-contrast .item-game {
+		background-color: var(--dark-mode-item-game-background-color);
+	}
+	
+}

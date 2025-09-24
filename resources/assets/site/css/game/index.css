@@ -1,0 +1,31 @@
+#game-index {}
+
+#game-index #game-share {
+    border: 0 !important;
+    width: 210px;
+    margin: -25px auto 15px;
+}
+
+#game-index #game-share #game-share-list {
+    float: none;
+}
+
+#game-index-noRatings {
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+#game-index-noRatings p {
+    font-weight: bold;
+    font-size: 14px;
+    color: #666
+}
+
+@media (max-width: 991px) {
+
+    #game-index-noRatings {
+        margin-top: 0;
+    }
+
+}

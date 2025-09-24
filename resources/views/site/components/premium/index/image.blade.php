@@ -1,0 +1,1 @@
+<img id="premium-image" src="{{ asset('img/premium-dk.png') }}">

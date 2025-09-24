@@ -1,0 +1,58 @@
+#feed {}
+
+#feed-filter {}
+
+#feed-filter ul {}
+
+#feed-filter ul li {
+    float: left;
+}
+
+#feed-filter ul li:not(:last-child) {
+    margin-right: 8px;
+}
+
+#feed-content {
+    clear: both;
+}
+
+#feed .listing-items > li {
+    margin-bottom: 50px;
+}
+
+#feed .item-rating-details,
+#feed .item-rating-actions,
+#feed .item-review-details,
+#feed .item-review-actions,
+#feed .item-review-date,
+#feed .item-contribution-info-date,
+#feed .item-collection-info-user,
+#feed .item-collection-info-actions {
+    display: none;
+}
+
+#feed .item-game {
+    width: 70%;
+}
+
+#feed .item-rating {
+    width: 95%;
+}
+
+#feed .item-review {
+    padding: 10px;
+}
+
+#feed-noResults,
+#feed-noFollowings {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+
+    #feed-filter ul li {
+        margin-bottom: 10px;
+    }
+
+}

@@ -1,0 +1,11 @@
+#game-index-ratings {}
+
+#game-index-ratings ul {}
+
+#game-index-ratings ul li {
+	margin-bottom: 50px;
+}
+
+#game-index-ratings #game-ratings-more {
+    clear: both;
+}

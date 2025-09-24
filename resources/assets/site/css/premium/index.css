@@ -1,0 +1,55 @@
+#premium {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#premium h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#premium .premium-icon {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 48px;
+    height: 48px;
+}
+
+#premium-text {
+    margin: 0 auto;
+    width: 720px;
+    font-size: 22px;
+}
+
+@media (max-width: 767px) {
+
+    #premium-text {
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    #premium {
+        padding-top: 30px;
+    }
+    
+    #premium h2 {
+        font-size: 32px;
+    }
+    
+    #premium .premium-icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 6px;
+
+    }
+
+    #premium-text {
+        font-size: 19px;
+    }
+
+}

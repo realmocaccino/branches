@@ -1,0 +1,12 @@
+.dropdown {
+    position: absolute;
+    top: 40px;
+    display: none;
+    background-color: #FFF;
+    padding: 10px;
+    max-height: 240px;
+    overflow-y: auto;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}

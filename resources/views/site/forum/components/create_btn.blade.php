@@ -1,0 +1,1 @@
+<a id="forum-createBtn" class="btn btn-sm btn-primary float-right" href="{{ isset($game) ? route('game.forum.create', $game->slug) : route('forum.create') }}">@lang('forum/components/create_btn.create_discussion') @if(!isset($game) and !$agent->isMobile()) @lang('forum/components/create_btn.offGame') @endisset</a>

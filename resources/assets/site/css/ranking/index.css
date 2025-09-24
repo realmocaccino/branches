@@ -1,0 +1,77 @@
+.ranking {
+    margin-top: 25px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.ranking-pos {}
+
+.ranking-pos .rankingPosition {
+    margin-top: 8px;
+}
+
+.ranking-item {
+    overflow: hidden;
+}
+
+.ranking-item .item-game-short,
+.ranking-item .item-game-link,
+.ranking-item .item-user,
+.ranking-item .item-user-link {
+    height: auto !important;
+}
+
+.ranking-item .item-game-image img {
+	width: 32px !important;
+	height: 40px !important;
+}
+
+.ranking-item .item-user-image img {
+	width: 38px !important;
+	height: 38px !important;
+}
+
+.ranking-item .item-game-data,
+.ranking-item .item-user-data {
+	margin-top: 1px !important;
+}
+
+.ranking-item .item-game-name,
+.ranking-item .item-user-name {
+    font-size: 14px !important;
+}
+
+.ranking-item .item-game-release {
+    font-size: 12px !important;
+}
+
+.ranking-item .item-user-slug {
+    font-size: 13px !important;
+}
+
+.ranking-score {}
+
+.ranking-pagination {
+	clear: both;
+	display: table;
+    margin: 0 auto;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    .ranking {
+        line-height: 18px;
+    }
+	
+	.ranking-item .item-game-name,
+    .ranking-item .item-user-name {
+        font-size: 13px !important;
+    }
+    
+    .ranking-item .item-game-release,
+    .ranking-item .item-user-slug {
+        font-size: 11px !important;
+    }
+	
+}

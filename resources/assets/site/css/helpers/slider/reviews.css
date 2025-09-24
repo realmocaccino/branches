@@ -1,0 +1,7 @@
+.slider-reviews .slick-prev {
+    display: none !important;
+}
+
+.slider-reviews .slick-dots {
+    bottom: -15px;
+}

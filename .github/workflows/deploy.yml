@@ -1,0 +1,48 @@
+name: Deploy to DigitalOcean
+
+on:
+  push:
+    branches:
+      - '*'  # Trigger on any branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      DO_API_TOKEN: ${{ secrets.DO_API_TOKEN }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      APP_NAME: nota-do-game
+      DOMAIN: yourdomain.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME} .
+
+      - name: Push Docker image
+        run: |
+          docker push $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
+
+      - name: Deploy on DigitalOcean Droplet
+        run: |
+          ssh root@your.droplet.ip "
+          docker pull $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME} &&
+          docker stop ${GITHUB_REF_NAME} || true &&
+          docker rm ${GITHUB_REF_NAME} || true &&
+          docker run -d --name ${GITHUB_REF_NAME} -p 80 --env-file /root/env/.env $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
+          "
+

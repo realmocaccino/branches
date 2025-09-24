@@ -1,0 +1,72 @@
+#game-header {
+    margin-bottom: 40px;
+}
+
+#game-header #game-share {
+    float: right;
+}
+
+#game-header-left {
+    float: left;
+    width: 200px;
+    margin-right: 35px;
+}
+
+#game-header-right {
+    float: left;
+    width: calc(100% - 200px - 35px);
+    margin-top: 45px;
+}
+
+#game-header #game-cover {
+    margin-bottom: 15px;
+}
+
+#game-header #game-buttons {
+    margin-bottom: 0;
+}
+
+#game-header #game-tags {
+    margin-bottom: 25px;
+}
+
+#game-header #game-name {}
+
+#game-header #game-scores {
+    margin: 18px 0 0 3px;
+}
+
+@media (max-width: 767px) {
+
+    #game-header {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    #game-header #game-share {
+        display: none;
+    }
+
+    #game-header-left {
+        float: none;
+        margin: 0 auto;
+        width: 180px;
+    }
+
+    #game-header-right {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #game-header #game-tags {
+        display: none;
+    }
+
+    #game-header #game-scores {
+        overflow: hidden;
+        margin: 20px 0 10px;
+    }
+
+}

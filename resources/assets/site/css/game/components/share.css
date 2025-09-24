@@ -1,0 +1,19 @@
+#game-share {
+	overflow: hidden;
+	display: table;
+}
+
+#game-share p {
+	float: left;
+	font-size: 15px;
+}
+
+#game-share-list {
+	float: left;
+	margin-top: -2px;
+}
+
+#game-share-list li {
+	float: left;
+	margin-left: 5px;
+}

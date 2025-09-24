@@ -1,0 +1,104 @@
+#premium-checkout-form {
+    margin: 30px auto;
+    width: 500px;
+}
+
+#premium-checkout-card {
+    margin-bottom: 30px;
+    min-height: 225px;
+}
+
+#premium-checkout-submit {
+    background: #5469d4;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    border-radius: 0 0 4px 4px;
+    border: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, .07);
+    width: 100%;
+}
+
+#premium-checkout-submit:hover {
+    filter: contrast(115%);
+}
+
+#premium-checkout-submit:disabled {
+    opacity: 0.9;
+    cursor: not-allowed;
+}
+
+#premium-checkout-errorMessage {
+    color: rgb(105, 115, 134);
+    text-align: left;
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#premium-checkout-spinner,
+#premium-checkout-spinner:before,
+#premium-checkout-spinner:after {
+    border-radius: 50%;
+}
+
+#premium-checkout-spinner {
+    color: #ffffff;
+    font-size: 22px;
+    text-indent: -99999px;
+    margin: 0px auto;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    box-shadow: inset 0 0 0 2px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#premium-checkout-spinner:before,
+#premium-checkout-spinner:after {
+    position: absolute;
+    content: "";
+}
+
+#premium-checkout-spinner:before {
+    width: 10.4px;
+    height: 20.4px;
+    background: #5469d4;
+    border-radius: 20.4px 0 0 20.4px;
+    top: -0.2px;
+    left: -0.2px;
+    -webkit-transform-origin: 10.4px 10.2px;
+    transform-origin: 10.4px 10.2px;
+    -webkit-animation: loading 2s infinite ease 1.5s;
+    animation: loading 2s infinite ease 1.5s;
+}
+
+#premium-checkout-spinner:after {
+    width: 10.4px;
+    height: 10.2px;
+    background: #5469d4;
+    border-radius: 0 10.2px 10.2px 0;
+    top: -0.1px;
+    left: 10.2px;
+    -webkit-transform-origin: 0px 10.2px;
+    transform-origin: 0px 10.2px;
+    -webkit-animation: loading 2s infinite ease;
+    animation: loading 2s infinite ease;
+}
+
+@media (max-width: 499px) {
+
+    #premium-checkout-form {
+        margin: 30px 30px;
+        width: calc(100% - 60px);
+    }
+
+}

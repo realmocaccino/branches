@@ -1,0 +1,179 @@
+.item-rating-extended {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 24px;
+	line-height: normal;
+	text-align: left;
+	overflow: hidden;
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	box-shadow: 0 2px 6px rgba(112, 112, 112, 0.2);
+	border-radius: 24px;
+}
+
+.dark .item-rating-extended {
+	background-color: var(--dark-mode-secondary-color);
+	border-color: var(--dark-mode-secondary-color);
+}
+
+.item-rating-extended hr {
+	border-color: var(--tertiary-color);
+}
+
+.dark .item-rating-extended hr {
+	border-color: var(--dark-mode-tertiary-color);
+	margin-bottom: 0;
+}
+
+.item-rating-extended .item-rating-extended-header {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data {
+	float: left;
+	margin-right: 10px;
+	width: calc(100% - 60px);
+	line-height: normal;
+	font-size: 15px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-user-picture,
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-game-picture {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-game-picture {
+	float: right;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-user-picture .item-user-picture-image,
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-game-picture .item-game-picture-image {
+    width: 48px;
+	height: 55px;
+	box-shadow: 0 7px 8px -8px rgba(0, 0, 0, .8);
+	border-radius: 8px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-game-name,
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-user-name {
+	margin-top: 6px;
+	font-weight: bold;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-game-name:hover,
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-user-name:hover {
+	color: var(--site-color);
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom {
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom .item-rating-extended-details {}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom .item-rating-extended-details .item-rating-extended-platform {
+	display: inline-block;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom .item-rating-extended-details .item-rating-extended-platform img {
+	width: 16px;
+	height: 16px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom .item-rating-extended-actions {
+	margin-top: 6px;
+	font-size: 15px;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-data .item-rating-extended-header-data-bottom .item-rating-extended-actions .item-rating-extended-actions-readReview {
+	display: none;
+}
+
+.item-rating-extended .item-rating-extended-header .item-rating-extended-header-score {
+	float: right;
+	width: 50px;
+}
+
+.item-rating-extended .item-rating-extended-chart {
+    margin-top: 0;
+	padding: 50px;
+}
+
+.item-rating-extended .item-rating-extended-criterias {
+	margin: 10px 0 0;
+}
+
+.item-rating-extended .item-rating-extended-criterias td {
+	border-color: var(--dark-mode-tertiary-color);
+	padding: 8px;
+}
+
+.item-rating-extended .item-review {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+.item-rating-extended .item-review:not(:last-of-type) {
+	margin-bottom: 0;
+}
+
+.item-rating-extended .item-review hr {
+	margin: 0;
+}
+
+.item-rating-extended .item-review .item-review-header {
+	display: none;
+}
+
+.item-rating-extended .item-review .item-review-body {
+	margin-top: 20px;
+}
+
+.item-rating-extended .item-review .item-review-body .item-review-text {
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.item-rating-extended .item-review .item-review-body .item-review-footer {
+	overflow: hidden;
+    margin-top: 20px;
+	text-align: center;
+}
+
+.item-rating-extended .item-review .item-review-body .item-review-footer .item-review-share {
+	display: none;
+}
+
+.item-rating-extended .item-review .item-review-body .item-review-footer .item-review-feedback {
+	display: inline-block;
+	overflow: hidden;
+	float: none;
+}
+
+.item-rating-extended .item-review .item-review-body .item-review-footer .item-review-feedback .badge {
+	font-size: 95%;
+}
+
+@media (max-width: 991px) {
+
+	.item-rating-extended {
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.item-rating-extended .item-rating-extended-data {
+		width: calc(100% - 141px);
+		margin-left: 8px;
+	}
+	
+	.item-rating-extended .item-rating-extended-data .item-rating-extended-data-bottom {
+		font-size: 11px;
+	}
+	
+}

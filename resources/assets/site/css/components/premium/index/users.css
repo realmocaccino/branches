@@ -1,0 +1,31 @@
+#premium-users {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#premium-users h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#premium-users ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#premium-users ul li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+#premium-users ul li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#premium-users ul li .item-user-picture-premium {
+    display: none;
+
+}

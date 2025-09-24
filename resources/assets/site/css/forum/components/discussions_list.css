@@ -1,0 +1,30 @@
+#forum-discussionsList {
+	text-align: left;
+	line-height: 28px;
+}
+
+@media (max-width: 1199px) {
+
+	#forum-discussionsList {
+		line-height: 24px;
+		font-size: 15px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+
+	#forum-discussionsList {
+		line-height: 18px;
+		font-size: 14px;
+	}
+	
+}
+
+@media (max-width: 479px) {
+
+	#forum-discussionsList {
+		font-size: 13px;
+	}
+	
+}

@@ -1,0 +1,61 @@
+.gg-container {
+  --main-color: #000;
+  --secondary-color: #111;
+  --txt-color: #fff;
+  --img-bg-color: rgba(240, 240, 240, 0.9);
+  --backdrop-color: rgba(240, 240, 240, 0.9);
+  --gap-length: 2px;
+  --row-height: 200px;
+  --column-width: 220px;
+}
+
+.gg-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
+  grid-auto-rows: var(--row-height);
+  grid-gap: var(--gap-length);
+  margin: 20px 0;
+}
+
+.gg-box a,
+.gg-box a img {
+  object-fit: cover;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: var(--img-bg-color);
+}
+
+.gg-box a:hover {
+  opacity: 0.92;
+}
+
+@media (min-width: 478px) {
+  .gg-box a:nth-child(2n):not(:last-of-type) {
+    grid-row-end: span 2;
+  }
+
+  [data-layout="horizontal"] a:nth-child(2n):not(:last-of-type) {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+  }
+
+  [data-layout="square"] a:nth-child(2n):not(:last-of-type) {
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .gg-box {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: calc(var(--row-height) - 15vh);
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .gg-box {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}

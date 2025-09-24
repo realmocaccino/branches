@@ -1,0 +1,229 @@
+.item-review-extended {
+	clear: both;
+	overflow: hidden;
+	border: 1px solid var(--secondary-color);
+    border-radius: 24px;
+    padding: 24px;
+	text-align: left;
+	background-color: var(--secondary-color);
+}
+
+.dark .item-review-extended {
+	background-color: var(--dark-mode-secondary-color);
+	border-color: var(--dark-mode-secondary-color);
+}
+
+.item-review-extended:not(:last-of-type) {
+	margin-bottom: 50px;
+}
+
+.item-review-extended hr {
+	border-color: var(--tertiary-color);
+}
+
+.dark .item-review-extended hr {
+	border-color: var(--dark-mode-tertiary-color);
+}
+
+.item-review-extended .item-review-extended-header {
+	overflow: hidden;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data {
+	float: left;
+	margin-right: 10px;
+	width: calc(100% - 60px);
+	line-height: normal;
+	font-size: 14px;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-user-picture,
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-game-picture {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-user-picture .item-user-picture-image,
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-game-picture .item-game-picture-image {
+    width: 48px;
+	height: 55px;
+	box-shadow: 0 7px 8px -8px rgba(0, 0, 0, .8);
+	border-radius: 8px;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-game-name,
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-user-name {
+    padding-top: 8px;
+	font-weight: bold;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-game-name:hover,
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-user-name:hover {
+	color: var(--site-color);
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-header-data-bottom {
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-header-data-bottom .item-review-extended-platform {
+	display: inline-block;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-review-extended-header-data-bottom .item-review-extended-platform img {
+	width: 16px;
+	height: 16px;
+}
+
+.item-review-extended .item-review-extended-header .item-review-extended-header-score {
+	float: right;
+	width: 50px;
+}
+
+.item-review-extended-criterias {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+  
+.item-review-extended-criterias-criteria {
+	/* Styles for your items */
+}
+
+.item-review-extended .item-review-extended-body {}
+
+.item-review-extended .item-review-extended-hasSpoilers {
+    font-weight: bold;
+    color: #C31906;
+}
+
+.item-review-extended .item-review-extended-text {
+	text-align: justify;
+	line-height: 34px;
+	white-space: pre-line;
+}
+
+.item-review-extended .item-review-extended-footer {}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-share,
+.item-review-extended .item-review-extended-footer .item-review-extended-actions,
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback {
+	font-size: 14px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-actions .badge,
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .badge {
+	font-size: 85%;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-actions {
+	float: left;
+	margin-right: 10px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-share {
+	float: left;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-share p {
+	float: left;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-share .item-review-extended-share-list {
+	float: left;
+	margin-left: 5px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-share li {
+	float: left;
+	margin-right: 3px;
+}
+
+#game-share-list {
+	float: left;
+}
+
+#game-share-list li {
+	float: left;
+	margin-left: 5px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback {
+	float: right;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group {
+	float: left;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group.item-review-extended-feedback-positive {}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group.item-review-extended-feedback-negative {
+    margin-left: 6px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group .item-review-extended-feedback-button,
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group .item-review-extended-feedback-counter {
+    padding: 6px 8px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group .item-review-extended-feedback-button {
+    border-radius: 7px 0 0 7px;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group .item-review-extended-feedback-counter {
+    border-radius: 0 7px 7px 0;
+}
+
+.item-review-extended .item-review-extended-footer .item-review-extended-feedback .item-review-extended-feedback-group .item-review-extended-feedback-counter {
+	margin-left: 1px;
+}
+
+.item-review-extended .review-write-form {
+	display: none;
+	width: 100%;
+}
+
+.item-review-extended .review-write-form .review-write-form-textarea {
+	height: 150px;
+}
+
+@media (max-width: 991px) {
+
+	.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-user-picture,
+	.item-review-extended .item-review-extended-header .item-review-extended-header-data .item-game-picture {
+		margin-right: 8px;
+	}
+
+	.item-review-extended .review-write-form .review-write-form-textarea {
+		height: 200px;
+	}
+
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 480px) {
+	
+	.item-review-extended {}
+	
+	.item-review-extended .item-review-extended-header .item-review-extended-header-data {
+		font-size: 14px;
+	}
+	
+	.item-review-extended .item-review-extended-header-data-bottom {}
+	
+	.item-review-extended .item-review-extended-footer .item-review-extended-actions {
+		float: none;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	
+	.item-review-extended .item-review-extended-footer .item-review-extended-share p {
+		float: none;
+		font-size: 13px;
+		margin-bottom: 2px;
+	}
+	
+}

@@ -1,0 +1,29 @@
+#collection-info {
+    margin-bottom: 20px;
+}
+
+#collection-info-share {
+	overflow: hidden;
+}
+
+#collection-info-share p {
+	float: left;
+}
+
+#collection-info-share ul {
+	float: left;
+}
+
+#collection-info-share ul li {
+	float: left;
+	margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+	
+	#collection-info-share {
+	    width: min-content;
+	    line-height: 28px;
+    }
+	
+}

@@ -1,0 +1,36 @@
+#game-index-reviews {}
+
+#game-index-reviews .title {
+    display: none;
+}
+
+#game-index-reviews-header {
+	text-align: center;
+}
+
+#game-index-reviews-items {
+    overflow: hidden;
+}
+
+#game-index-reviews-items .listing-items {
+    margin-top: 0;
+}
+
+#game-index-reviews-items .listing-items > li {
+    margin-bottom: 40px;
+}
+
+#game-index-reviews-items .listing-items > li:last-of-type {
+    margin-bottom: 0;
+}
+
+#game-index-reviews-noReviews {
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+}
+
+#game-index-reviews-more {
+    margin: 40px auto 0;
+    width: fit-content;
+}

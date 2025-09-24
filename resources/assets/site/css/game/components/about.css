@@ -1,0 +1,27 @@
+#game-about {}
+
+#game-about-screenshots {}
+
+#game-about-screenshots .title {
+    display: none;
+}
+
+#game-about-description {}
+
+#game-about-description #game-description {
+    margin-bottom: 20px;
+}
+
+#game-about-description .title {
+    display: none;
+}
+
+#game-about-trailer {}
+
+#game-about-trailer #game-trailer {
+    margin-bottom: 0;
+}
+
+#game-about-trailer .title {
+    display: none;
+}

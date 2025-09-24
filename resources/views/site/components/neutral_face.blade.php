@@ -1,0 +1,1 @@
+<em class="fa fa-meh-o neutral_face {{ isset($size) ? 'neutral_face_' . $size : '' }}"></em>

@@ -1,0 +1,163 @@
+.item-collection {
+    line-height: 20px;
+    width: 314px;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.item-collection:hover {
+    background-color: var(--tertiary-color);
+}
+
+.dark .item-collection {
+	background-color: var(--dark-mode-secondary-color);
+	border-color: var(--dark-mode-secondary-color);
+}
+
+.dark .item-collection:hover {
+    background-color: var(--dark-mode-tertiary-color);
+}
+
+.item-collection-deck {
+	position: relative;
+	width: 100%;
+    height: 200px;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.item-collection-deck li {
+	position: absolute;
+	height: 200px;
+}
+
+.item-collection-deck li:nth-child(1n) {
+	left: 0;
+	z-index: 1;
+}
+
+.item-collection-deck li:nth-child(2n) {
+	left: 80px;
+	z-index: 2;
+}
+
+.item-collection-deck li:nth-child(3n) {
+	left: 160px;
+	z-index: 3;
+}
+
+.item-collection-deck li:nth-child(4n) {
+	left: 210px;
+	z-index: 4;
+}
+
+.item-collection-deck li img {
+    box-shadow: 0 7px 8px -8px rgba(0, 0, 0, .8);
+    height: 200px;
+}
+
+.item-collection-info {
+    padding: 20px 16px 15px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.item-collection-info-nameAndTotal {
+    float: left;
+    width: 65%;
+}
+
+.item-collection-info-name {
+    font-size: 19px;
+}
+
+.item-collection-info-total {
+    margin-top: 5px;
+}
+
+.item-collection-info-user {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+.item-collection-info-user-picture {}
+
+.item-collection-info-user-picture .item-user-picture-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.item-collection-info-user-slug {
+    display: none;
+}
+
+.item-collection-info-private {
+    float: right;
+}
+
+.item-collection-info-actions {
+    clear: both;
+    padding-top: 5px;
+}
+
+.item-collection-info-actions .badge {}
+
+@media (max-width: 1199px) {
+
+    .item-collection-info-user {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .item-collection {
+        line-height: 18px;
+    }
+
+    .item-collection-info-nameAndTotal {
+        float: none;
+        width: 100%;
+    }
+    
+    .item-collection-info-user {
+        margin-top: 5px;
+        text-align: left;
+    }
+    
+    .item-collection-info-private {
+        margin-top: 5px;
+        float: none;
+    }
+
+    .item-collection-cover {
+        height: 150px;
+    }
+
+    .item-collection-cover img {
+        min-height: 150px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .item-collection-info-name {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    .item-collection-info-name {
+        font-size: 15px;
+    }
+
+}

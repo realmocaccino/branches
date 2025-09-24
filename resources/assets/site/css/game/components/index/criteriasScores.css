@@ -1,0 +1,51 @@
+#game-index-criteriasScores {}
+
+#game-index-criteriasScores-table {
+	margin-bottom: 10px;
+}
+
+#game-index-criteriasScores-table tr:first-child th,
+#game-index-criteriasScores-table tr:first-child td {
+	border-top: 0;
+}
+
+#game-index-criteriasScores-table-labels {}
+
+#game-index-criteriasScores th,
+#game-index-criteriasScores td {
+	vertical-align: middle;
+}
+
+#game-index-criteriasScores th {
+	font-size: 14px;
+}
+
+.game-index-criteriasScores-table-criteriaRow {}
+
+.game-index-criteriasScores-table-criteriaRow td {
+	height: 80px;
+}
+
+.game-index-criteriasScores-table-criteriaRow-name {
+    font-weight: bold;
+	cursor: default;
+}
+
+.game-index-criteriasScores-table-criteriaRow-hint {
+	width: 13x;
+	height: 13px;
+}
+
+#game-index-platformsScores .item-platform {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+
+    .game-index-criteriasScores-table-criteriaRow td {
+	    height: 75px;
+    }
+
+}

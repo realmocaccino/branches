@@ -1,0 +1,9 @@
+.premium-icon {
+    display: inline;
+    margin-right: 2px;
+}
+
+.premium-icon img {
+    width: 20px;
+    height: 20px;
+}

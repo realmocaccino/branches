@@ -1,0 +1,39 @@
+.form-group label:first-child {
+	display: block;
+	font-weight: bold;
+}
+
+.form-group input[type=checkbox]:not(:first-of-type),
+.form-group input[type=radio]:not(:first-of-type) {
+	margin-left: 10px;
+}
+
+.help-block {
+	display: block;
+}
+
+.descriptive-form {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+#form-login-last-group {
+	text-align: center;
+}
+
+#form-login-last-group a {
+	font-size: 14px;
+	padding: 0;
+	border: 0;
+	font-weight: bold;
+}
+
+#form-register-terms-label,
+#form-account-newsletter-label {
+	display: inline;
+}
+
+#form-register-fax {
+    display: none;
+}

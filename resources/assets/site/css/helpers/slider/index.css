@@ -1,0 +1,29 @@
+ul.slider {
+	margin: 10px auto 30px !important;
+}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+    margin-top: -36px;
+    z-index: 0;
+}
+
+.splide__arrow--prev {
+    left: -50px;
+}
+
+.splide__arrow--next {
+    right: -50px;
+}
+
+.splide__spinner {
+    display: none !important;
+}
+
+@media (max-width: 575px) {
+
+    ul.slider {
+	    margin-bottom: 15px;
+    }
+    
+}

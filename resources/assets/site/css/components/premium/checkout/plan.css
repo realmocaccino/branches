@@ -1,0 +1,15 @@
+#premium-checkout-plan {
+    padding-top: 20px;
+}
+
+#premium-checkout-premiumIcon {
+    width: 26px;
+    height: 26px;
+    margin-top: -12px;
+    margin-right: 5px;
+}
+
+#premium-checkout-plan h2 {
+    display: inline;
+    font-weight: bold;
+}

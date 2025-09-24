@@ -1,0 +1,193 @@
+:root {
+	--sides-background-color: #FFF;
+
+	--dark-mode-sides-background-color: #171D25;
+}
+
+#mobile-side-site, #mobile-side-user {
+	display: none;
+}
+
+@media (max-width: 991px) {
+
+	#mobile-side-site,
+	#mobile-side-user {
+		z-index: 2;
+		position: fixed;
+		height: 100%;
+		padding: 16px 16px 0;
+		background-color: var(--sides-background-color);
+		box-shadow: -8px 0 10px -6px #444;
+		display: none;
+	}
+
+	.dark #mobile-side-site,
+	.dark #mobile-side-user {
+		background-color: var(--dark-mode-sides-background-color);
+	}
+	
+	#mobile-side-site {
+	    top: 70px;
+		left: -200px;
+		width: 200px;
+	}
+	
+	#mobile-side-site-header {
+		overflow: hidden;
+	}
+	
+	#mobile-side-site-header h1 {
+		margin-bottom: 16px;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	#mobile-side-site-header h1 a {}
+	
+	#mobile-side-site-header h1 a img {
+		width: 88px;
+	}
+	
+	#mobile-side-site-body {
+		height: calc(100% - 70px);
+		overflow-y: scroll;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	
+	#mobile-side-site-social {}
+	
+	#mobile-side-site-social-icons {
+		margin-top: 5px;
+	}
+	
+	#mobile-side-site-social-icons a:not(:last-child) {
+        margin-right: 4px;
+    }
+	
+	ul#mobile-side-site-menu {}
+	
+	ul#mobile-side-site-menu li {
+		margin-bottom: 14px;
+	}
+	
+	ul#mobile-side-site-menu li a {
+	    text-transform: uppercase;
+	}
+	
+	ul#mobile-side-site-menu li a:hover,
+	ul#mobile-side-site-menu li a:focus {
+		color: var(--site-color);
+	}
+	
+	#mobile-side-user {
+	    top: 0;
+		right: -250px;
+		width: 250px;
+	}
+	
+	#mobile-side-user #mobile-side-user-header {
+	    line-height: 20px;
+	}
+	
+	#mobile-side-user #mobile-side-user-header .item-user-picture {
+		float: left;
+		margin: 0 8px 8px 0;
+	}
+	
+	#mobile-side-user #mobile-side-user-header .item-user-picture .item-user-picture-image {
+		width: 78px;
+		height: 78px;
+		border-radius: 50%;
+	}
+
+	#mobile-side-user-header-data {
+		float: left;
+	}
+	
+	#mobile-side-user #mobile-side-user-header #mobile-side-user-header-name {
+	    padding-top: 8px;
+	}
+	
+	#mobile-side-user #mobile-side-user-header #mobile-side-user-header-username {}
+
+	#mobile-side-user #mobile-side-user-header #mobile-side-user-level {
+		float: right;
+		margin: 0;
+	}
+	
+	#mobile-side-user #mobile-side-user-header #mobile-side-user-header-actions {
+		float: left;
+	    margin-top: 4px;
+	    font-size: 15px;
+	}
+	
+	#mobile-side-user #mobile-side-user-header #mobile-side-user-header-actions .badge {
+        padding: 6px 10px;
+        border-radius: 14px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body {
+		clear: both;
+		margin-top: 8px;
+		padding-bottom: 20px;
+		height: calc(100% - 95px);
+		overflow-y: scroll;
+	}
+	
+	#mobile-side-user #mobile-side-user-body > p {
+	    margin-top: 5px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body #mobile-side-user-body-notifications {}
+	
+	#mobile-side-user #mobile-side-user-body .title {
+	    margin: 20px 0;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .title h3 {
+	    font-size: 20px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating {
+		margin-bottom: 20px;
+		height: 60px;
+		padding: 0;
+	    box-shadow: none;
+	    border: 0;
+	    border-radius: 0;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data {
+		margin: 0;
+		width: calc(100% - 50px);
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-game-name {
+		font-size: 14px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom {
+	    margin-top: 3px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-details {
+	    margin-top: 3px;
+		font-size: 11px;
+	}
+	
+	#mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-details .item-rating-platform img {
+        width: 14px;
+        height: 14px;
+    }
+    
+    #mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-actions .badge {
+	    padding: 4px;
+	}
+    
+    #mobile-side-user #mobile-side-user-body .item-rating .item-rating-header .item-rating-header-data .item-rating-header-data-bottom .item-rating-actions .item-rating-actions-delete {
+	    display: none;
+	}
+	
+	#mobile-side-user-header-seeAllRatings-btn {}
+}

@@ -1,0 +1,528 @@
+.listing {}
+
+.listing ul.listing-items {
+	margin-top: 30px;
+    overflow: hidden;
+}
+
+.listing ul.listing-items > li {
+	float: left;
+	margin: 0 20px 30px 0;
+}
+
+.listing.listing-tenColumns ul.listing-items > li {
+	width: calc(10% - 18px);
+}
+
+.listing.listing-nineColumns ul.listing-items > li {
+	width: calc(11.1% - 17.7px);
+}
+
+.listing.listing-eightColumns ul.listing-items > li {
+	width: calc(12.5% - 17.5px);
+}
+
+.listing.listing-sevenColumns ul.listing-items > li {
+	width: calc(14.2% - 17.1px);
+}
+
+.listing.listing-sixColumns ul.listing-items > li {
+	width: calc(16.6% - 16.6px);
+}
+
+.listing.listing-fiveColumns ul.listing-items > li {
+	width: calc(20% - 16px);
+}
+
+.listing.listing-fourColumns ul.listing-items > li {
+	width: calc(25% - 15px);
+}
+
+.listing.listing-threeColumns ul.listing-items > li {
+	width: calc(33.3% - 13.3px);
+}
+
+.listing.listing-twoColumns ul.listing-items > li {
+	width: calc(50% - 10px);
+}
+
+.listing.listing-oneColumn ul.listing-items > li {
+	width: 100%;
+}
+
+.listing .listing-pagination {
+	clear: both;
+	display: table;
+    margin: 30px auto 0;
+	text-align: center;
+}
+
+.listing .listing-noResults {
+    margin-top: 70px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.listing.listing-twoColumns ul.listing-items > li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.listing.listing-twoColumns ul.listing-items > li:nth-child(2n+1) {
+    clear: both;
+}
+
+.listing.listing-oneColumn ul.listing-items > li {
+	margin-right: 0;
+	clear: both;
+}
+
+@media (min-width: 1600px) {
+
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(10n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(10n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(9n) {
+	    margin-right: 0;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(9n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns ul.listing-items > li:nth-child(8n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns ul.listing-items > li:nth-child(8n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-sevenColumns ul.listing-items > li:nth-child(7n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-sevenColumns ul.listing-items > li:nth-child(7n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-sixColumns ul.listing-items > li:nth-child(6n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-sixColumns ul.listing-items > li:nth-child(6n+1) {
+	    clear: both;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .listing.listing-fiveColumns ul.listing-items > li:nth-child(5n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-fiveColumns ul.listing-items > li:nth-child(5n+1) {
+	    clear: both;
+    }
+	
+	.listing.listing-fourColumns.listing-ratings ul.listing-items > li:nth-child(4n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-fourColumns.listing-ratings ul.listing-items > li:nth-child(4n+1) {
+	    clear: both;
+    }
+    
+}
+
+@media (min-width: 992px) {
+	
+	.listing.listing-fourColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-fourColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-threeColumns.listing-ratings ul.listing-items > li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .listing.listing-threeColumns.listing-ratings ul.listing-items > li:nth-child(3n+1) {
+        clear: both;
+    }
+	
+}
+
+@media (min-width: 768px) {
+	
+	.listing.listing-threeColumns:not(.listing-ratings) ul.listing-items > li:nth-child(3n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-threeColumns:not(.listing-ratings) ul.listing-items > li:nth-child(3n+1) {
+	    clear: both;
+    }
+	
+}
+
+@media (max-width: 1599px) and (min-width: 1400px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(12.5% - 17.5px);
+	}
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(8n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(8n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(8n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(8n+1) {
+	    clear: both;
+    }
+	
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(14.2% - 17.1px);
+	}
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(7n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(7n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(7n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(7n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns ul.listing-items > li,
+    .listing.listing-sevenColumns ul.listing-items > li,
+	.listing.listing-sixColumns ul.listing-items > li {
+		width: calc(20% - 32px);
+	}
+    
+    .listing.listing-eightColumns ul.listing-items > li:nth-child(5n),
+    .listing.listing-sevenColumns ul.listing-items > li:nth-child(5n),
+    .listing.listing-sixColumns ul.listing-items > li:nth-child(5n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns ul.listing-items > li:nth-child(5n+1),
+    .listing.listing-sevenColumns ul.listing-items > li:nth-child(5n+1),
+    .listing.listing-sixColumns ul.listing-items > li:nth-child(5n+1) {
+	    clear: both;
+    }
+	
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(16.6% - 16.6px);
+	}
+
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(6n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(6n) {
+	    margin-right: 0;
+    }
+
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(6n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(6n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns:not(.listing-ratings) ul.listing-items > li,
+    .listing.listing-sevenColumns:not(.listing-ratings) ul.listing-items > li,
+	.listing.listing-sixColumns:not(.listing-ratings) ul.listing-items > li,
+	.listing.listing-fiveColumns:not(.listing-ratings) ul.listing-items > li {
+		width: calc(25% - 30px);
+	}
+    
+    .listing.listing-eightColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n),
+    .listing.listing-sevenColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n),
+    .listing.listing-sixColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n),
+    .listing.listing-fiveColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n+1),
+    .listing.listing-sevenColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n+1),
+    .listing.listing-sixColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n+1),
+    .listing.listing-fiveColumns:not(.listing-ratings) ul.listing-items > li:nth-child(4n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li {
+		width: calc(33% - 26px);
+	}
+	
+	.listing.listing-ratings ul.listing-items > li:nth-child(3n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li:nth-child(3n+1) {
+	    clear: both;
+    }
+	
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(20% - 16px);
+	}
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(5n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(5n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(5n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(5n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li {
+		width: calc(33% - 26px);
+	}
+	
+	.listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n),
+	.listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n),
+	.listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n),
+	.listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n),
+	.listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n+1),
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n+1),
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n+1),
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n+1),
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(3n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li {
+		width: calc(50% - 20px);
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-ratings ul.listing-items > li:nth-child(2n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li:nth-child(2n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-reviews ul.listing-items > li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-reviews ul.listing-items > li:nth-child(1n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-reviews ul.listing-items > li:nth-child(1n+1) {
+	    clear: both;
+    }
+	
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(25% - 15px);
+	}
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(4n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(4n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(4n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(4n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li {
+		width: calc(50% - 20px);
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li,
+    .listing.listing-reviews ul.listing-items > li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-ratings ul.listing-items > li:nth-child(1n),
+	.listing.listing-reviews ul.listing-items > li:nth-child(1n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-reviews ul.listing-items > li:nth-child(1n+1) {
+	    clear: both;
+    }
+
+}
+
+@media (max-width: 575px) and (min-width: 480px) {
+
+    .listing.listing-tenColumns ul.listing-items > li,
+    .listing.listing-nineColumns ul.listing-items > li {
+		width: calc(33.3% - 13.3px);
+	}
+
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(3n),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(3n) {
+	    margin-right: 0;
+    }
+
+    .listing.listing-tenColumns ul.listing-items > li:nth-child(3n+1),
+    .listing.listing-nineColumns ul.listing-items > li:nth-child(3n+1) {
+	    clear: both;
+    }
+
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li,
+    .listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li {
+		width: calc(50% - 20px);
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n),
+	.listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-sevenColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-sixColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-fiveColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-fourColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1),
+    .listing.listing-threeColumns:not(.listing-ratings):not(.listing-reviews) ul.listing-items > li:nth-child(2n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li,
+    .listing.listing-reviews ul.listing-items > li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-ratings ul.listing-items > li:nth-child(1n),
+	.listing.listing-reviews ul.listing-items > li:nth-child(1n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-ratings ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-reviews ul.listing-items > li:nth-child(1n+1) {
+	    clear: both;
+    }
+
+}
+
+@media (max-width: 479px) {
+    
+    .listing.listing-eightColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-sevenColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-sixColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-fiveColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-fourColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-threeColumns:not(.listing-games) ul.listing-items > li,
+    .listing.listing-twoColumns:not(.listing-games) ul.listing-items > li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.listing.listing-eightColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-sevenColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-sixColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-fiveColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-fourColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-threeColumns:not(.listing-games) ul.listing-items > li:nth-child(1n),
+	.listing.listing-twoColumns:not(.listing-games) ul.listing-items > li:nth-child(1n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-eightColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-sevenColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-sixColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-fiveColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-fourColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-threeColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1),
+    .listing.listing-twoColumns:not(.listing-games) ul.listing-items > li:nth-child(1n+1) {
+	    clear: both;
+    }
+    
+    .listing.listing-games ul.listing-items > li {
+		width: calc(50% - 15px);
+		margin: 0 30px 30px 0;
+	}
+	
+	.listing.listing-games ul.listing-items > li:nth-child(2n) {
+	    margin-right: 0;
+    }
+    
+    .listing.listing-games ul.listing-items > li:nth-child(2n+1) {
+	    clear: both;
+    }
+
+}

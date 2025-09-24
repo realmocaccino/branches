@@ -1,0 +1,50 @@
+#game-ranking {
+    overflow: hidden;
+}
+
+#game-ranking ul {
+    margin-top: 0;
+}
+
+#game-ranking ul li {
+    margin-bottom: 0;
+}
+
+#game-ranking ul li .rankingPosition {
+    float: left;
+    width: 9%;
+    height: 86px;
+    line-height: 86px;
+}
+
+#game-ranking ul li .item-game-horizontal {
+    float: left;
+    width: 91%;
+}
+
+@media (max-width: 991px) {
+
+	#game-ranking ul li {
+        margin-bottom: 5px;
+    }
+
+    #game-ranking ul li .rankingPosition,
+    #game-ranking ul li .item-game-horizontal,
+    #game-ranking ul li .item-game-link {
+        height: 74px;
+    }
+
+    #game-ranking ul li .rankingPosition {
+        line-height: 74px;
+    }
+
+    #game-ranking ul li .item-game-image img {
+        width: 50px;
+        height: 58px;
+    }
+
+    #game-ranking ul li .item-game-horizontal .item-game-score {
+        top: 12px;
+    }
+
+}

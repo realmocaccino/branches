@@ -1,0 +1,6 @@
+<div class="item-review-feedback-group item-review-feedback-positive">
+	<a class="item-review-feedback-button badge badge-success" href="{{ route('feedback.vote', [$review->game->slug, $review->user->slug, 1]) }}" data-ajax-url="{{ route('ajax.feedback.vote', [$review->game->slug, $review->user->slug, 1]) }}"><span class="fa fa-check @if(!$review->checkIfLoggedInUserHasFeedbacked(1)) d-none @endif"></span><span class="fa fa-thumbs-up @if($review->checkIfLoggedInUserHasFeedbacked(1)) d-none @endif"></span> @lang('components/item/review_feedback.useful')</a><span class="item-review-feedback-counter badge badge-success">{{ $review->positiveFeedbacks()->count() }}</span>
+</div>
+<div class="item-review-feedback-group item-review-feedback-negative">
+	<a class="item-review-feedback-button badge badge-danger" href="{{ route('feedback.vote', [$review->game->slug, $review->user->slug, 0]) }}" data-ajax-url="{{ route('ajax.feedback.vote', [$review->game->slug, $review->user->slug, 0]) }}"><span class="fa fa-check @if(!$review->checkIfLoggedInUserHasFeedbacked(0)) d-none @endif"></span> <span class="fa fa-thumbs-down @if($review->checkIfLoggedInUserHasFeedbacked(0)) d-none @endif"></span> @lang('components/item/review_feedback.not_useful')</a><span class="item-review-feedback-counter badge badge-danger">{{ $review->negativeFeedbacks()->count() }}</span>
+</div>

@@ -1,0 +1,20 @@
+.item-activity {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.item-activity .item-user-picture {
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.item-activity .item-user-picture .item-user-picture-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+}
+
+.item-activity .item-activity-description {
+    font-weight: bold;
+    font-size: 14px;
+}

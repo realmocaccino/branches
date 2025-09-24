@@ -1,0 +1,13 @@
+.pagination {
+	font-weight: bold;
+}
+
+.pagination .page-item a {}
+
+.pagination .page-item.disabled a {}
+
+.dark .pagination .page-item a {
+    background-color: transparent;
+}
+
+.dark .pagination .page-item.disabled a {}

@@ -1,0 +1,14 @@
+@media (max-width: 575px) {
+	
+	.slider-games .item-game {
+		width: 205px;
+		height: 340px;
+		overflow: hidden;
+	}
+	
+	.slider-games .item-game .item-game-name {
+		max-height: 40px;
+		overflow: hidden;
+	}
+	
+}

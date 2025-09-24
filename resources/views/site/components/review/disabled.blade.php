@@ -1,0 +1,3 @@
+<p id="review-disabled">
+	<a id="review-disabled-rateBtn" class="dialog btn btn-sm btn-{{ $buttonClass ?? 'primary' }}" href="{{ route('rating.index', $game->slug) }}" data-ajax-url="{{ route('rating.ajax.index', $game->slug) }}">@lang('components/review/disabled.rate_the_game')</a> <span id="review-disabled-writeReview" class="ordinary-text">@lang('components/review/disabled.to_write_a_review')</span>
+</p>

@@ -1,0 +1,23 @@
+.ranking-users {
+    margin-top: 20px;
+}
+
+.ranking-users-filter {
+    margin-bottom: 30px;
+}
+
+.ranking-users-filter .btn {
+    margin-right: 6px;
+}
+
+.ranking-users-totalInfo {
+    width: 16px;
+}
+
+@media (max-width: 767px) {
+
+	.ranking-users-totalInfo {
+        display: none;
+    }
+	
+}

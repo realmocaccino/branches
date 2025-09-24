@@ -1,0 +1,23 @@
+#game-name {
+    display: inline-block;
+    margin-bottom: 0;
+	font-size: 55px;
+	font-weight: bold;
+	word-wrap: break-word;
+    overflow: hidden;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.7);
+}
+
+.dark #game-name {
+    text-shadow: none;
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+    #game-name {
+	    font-size: 40px;
+    }
+
+}

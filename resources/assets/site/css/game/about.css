@@ -1,0 +1,9 @@
+#game-about-page {}
+
+#game-about-page #game-about {}
+
+#game-about-page #game-about .title {
+    display: none;
+}
+
+@media (max-width: 991px) {}

@@ -1,0 +1,101 @@
+#game-buttons-collections-tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 214px !important;
+    background-color: var(--primary-color);
+    width: 260px;
+    max-height: 300px;
+    padding: 25px;
+    overflow-y: auto;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+.dark #game-buttons-collections-tooltip {
+    background-color: var(--dark-mode-secondary-color);
+}
+
+#game-buttons-collections-tooltip .game-buttons-collections-tooltip-button {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+#game-buttons-collections-tooltip-createCollectionForm {
+    overflow: hidden;
+}
+
+#game-buttons-collections-tooltip-createCollectionForm-input {
+    float: left;
+    width: 79%;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: var(--tertiary-color);
+}
+
+.dark #game-buttons-collections-tooltip-createCollectionForm-input {
+    background-color: var(--dark-mode-tertiary-color);
+}
+
+#game-buttons-collections-tooltip-createCollectionForm-input:focus {
+    border-color: #007bff;
+}
+
+#game-buttons-collections-tooltip-createCollectionForm-input::placeholder {
+    color: #999;
+    font-weight: bold;
+}
+
+.dark #game-buttons-collections-tooltip-createCollectionForm-input::placeholder {
+    color: #BBB;
+}
+
+#game-buttons-collections-tooltip-createCollectionForm-button {
+    float: right;
+    margin-right: 0 !important;
+    width: 19%;
+}
+
+#game-buttons-collections-tooltip-createCollectionForm-createText {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    #game-buttons-collections-tooltip {
+        top: 55px;
+        left: -15px !important;
+        width: 210px;
+        max-height: 400px;
+        padding: 22px;
+    }
+    
+    #game-buttons-collections-tooltip > a {
+        white-space: normal;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    #game-buttons-collections-tooltip-createCollectionForm-input {
+        width: 100%;
+  
+    }
+
+    #game-buttons-collections-tooltip-createCollectionForm-button {
+        margin-top: 8px;
+        width: 100%;
+    }
+    
+    #game-buttons-collections-tooltip-createCollectionForm-button em {
+        display: none;
+    }
+    
+    #game-buttons-collections-tooltip-createCollectionForm-createText {
+        display: inline;
+    }
+
+}

@@ -1,0 +1,28 @@
+ul#game-modes  {
+    margin: 14px 0 0 12px;
+    overflow: hidden;
+}
+
+ul#game-modes li {
+    float: left;
+    margin-right: 8px;
+}
+
+ul#game-modes li:last-child {
+    margin-right: 0;
+}
+
+ul#game-modes li img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    opacity: .5;
+}
+
+@media (max-width: 767px) {
+
+    ul#game-modes {
+        display: none;
+    }
+
+}

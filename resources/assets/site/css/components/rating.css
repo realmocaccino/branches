@@ -1,0 +1,195 @@
+#rating {
+	margin-top: 10px;
+}
+
+#rating-header {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#rating-header .item-game-picture {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#rating-header .item-game-picture img {
+	width: 78px;
+}
+
+#rating-header #rating-header-score {
+	display: inline-block;
+}
+
+#rating-body {
+	clear: both;
+	text-align: center;
+}
+
+#dialog #rating-body {
+	width: 800px;
+}
+
+#rating-form {}
+
+#rating-criterias {
+	float: left;
+	width: calc(52% - 20px);
+	margin-right: 20px;
+}
+
+#rating-chart {
+	float: right;
+	width: 48%;
+	padding-top: 50px;
+}
+
+#rating-bottom {
+	clear: both;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#rating-bottom-score {
+	display: none;
+	margin-top: 10px;
+}
+
+#rating-bottom-delete {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#rating-bottom-delete:hover {
+	text-decoration: underline;
+}
+
+#rating-platform {}
+
+#rating-button {
+	margin-top: 10px;
+}
+
+.rating-instructions {
+	margin-bottom: 10px !important;
+}
+
+#rating-form fieldset .rating-criteria {
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#rating-form fieldset .rating-criteria:last-child {
+	padding-bottom: 10px !important;
+}
+
+.rating-criteria-left {
+	float: left;
+	text-align: left;
+	width: calc(100% - 74px);
+	margin-right: 10px;
+}
+
+.rating-criteria-hint {
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/info.png');
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	float: left;
+	margin-right: 5px;
+}
+
+.dark .rating-criteria-hint {
+	background-image: url('../img/info-dark.png');
+}
+
+.rating-criteria-name {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.rating-criteria-score {
+	float: right;
+	width: 64px;
+}
+
+.rating-criteria-rangeslider {
+	clear: both;
+}
+
+#rating-delete {}
+
+#rating-delete-form-message {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#rating-delete-form-message,
+#rating-delete-form-buttons {
+	margin-top: 10px;
+}
+
+#dialog #rating-delete {
+	margin: 15px;
+	min-width: 300px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#dialog #rating-delete-form-message {
+	width: 220px;
+	margin: 0 auto;
+}
+
+#dialog #rating-delete-form-message,
+#dialog #rating-delete-form-buttons {
+	margin-top: 20px;
+}
+
+@media (max-height: 799px) {
+
+    .rating-instructions {
+	    font-size: 14px;
+	    padding: 8px;
+	    line-height: 22px;
+    }
+
+    #rating-criterias {
+		margin-top: 10px;
+	}
+    
+    #rating-form fieldset .rating-criteria {
+	    padding-bottom: 15px;
+    }
+    
+    .rating-criteria-score {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-height: 650px) {
+
+	#rating-bottom-score {
+		display: block;
+	}
+
+}
+
+@media (max-width: 800px) {
+	
+	#dialog #rating-body {
+		width: auto;
+	}
+	
+	#rating-criterias {
+		float: none;
+		width: auto;
+		margin-right: 0;
+	}
+
+	#rating-chart {
+		display: none;
+	}
+	
+}

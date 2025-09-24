@@ -1,0 +1,16 @@
+#forum-discussion {
+	margin-top: 20px;
+	text-align: left;
+}
+
+#forum-discussion-question {
+	margin-top: 20px;
+}
+
+#forum-discussion-question h2 {
+	font-weight: bold;
+}
+
+#forum-discussion-answers {}
+
+#forum-discussion-createAnswer-form {}

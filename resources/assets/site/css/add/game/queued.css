@@ -1,0 +1,6 @@
+#add-game-queued {}
+
+#add-game-queued-loading {
+    display: none;
+    height: 200px;
+}
