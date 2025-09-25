@@ -37,13 +37,19 @@ jobs:
       - name: Push Docker image
         run: |
           docker push $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
-
+          
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          
       - name: Deploy on DigitalOcean Droplet
         run: |
-          ssh root@your.droplet.ip "
-          docker pull $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME} &&
-          docker stop ${GITHUB_REF_NAME} || true &&
-          docker rm ${GITHUB_REF_NAME} || true &&
-          docker run -d --name ${GITHUB_REF_NAME} -p 80 --env-file /root/env/.env $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_DROPLET_IP }} "
+          docker pull ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME} &&
+          docker stop $APP_NAME || true &&
+          docker rm $APP_NAME || true &&
+          docker run -d --name $APP_NAME -p 80:80 --env-file /root/env/.env \
+            ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME}
           "
 
