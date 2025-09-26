@@ -30,13 +30,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
-        run: |
-          docker build -t $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME} .
+      - name: Build Docker images via docker-compose
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME} .
 
-      - name: Push Docker image
-        run: |
-          docker push $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
+      - name: Push Docker images via docker-compose
+         run: docker push ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME}
           
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.7.0
@@ -47,9 +45,6 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_DROPLET_IP }} "
           docker pull ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME} &&
-          docker stop $APP_NAME || true &&
-          docker rm $APP_NAME || true &&
-          docker run -d --name $APP_NAME -p 80:80 --env-file /root/env/.env \
-            ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME}
+          docker run -d --name $APP_NAME -p 80:80 \
           "
 
