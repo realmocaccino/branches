@@ -34,7 +34,7 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME} .
 
       - name: Push Docker images via docker-compose
-         run: docker push ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME}
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/$APP_NAME:${GITHUB_REF_NAME}
           
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.7.0
