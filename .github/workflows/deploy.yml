@@ -43,9 +43,10 @@ jobs:
           
       - name: Deploy on DigitalOcean Droplet
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_DROPLET_IP }} "
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_DROPLET_IP }} '
             docker pull $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME} &&
             docker stop $APP_NAME || true &&
             docker rm $APP_NAME || true &&
             docker run -d --name $APP_NAME -p 80:80 $DOCKER_USERNAME/$APP_NAME:${GITHUB_REF_NAME}
+          '
 
